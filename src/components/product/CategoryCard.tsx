@@ -31,16 +31,16 @@ export default function CategoryCard({ category }: { category: Category }) {
   const productCount = getCategoryProductCount(category);
 
   return (
-    <Link href={`/products/${category.id}`}>
-      <div className={`group relative rounded-2xl border-2 ${colors.accent} ${colors.bg} p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
+    <Link href={`/products/${category.id}`} className="block h-full">
+      <div className={`group relative h-full flex flex-col rounded-2xl border-2 ${colors.accent} ${colors.bg} p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
         <div className={`${colors.text} mb-4`}>
           {CATEGORY_ICONS[category.id]}
         </div>
         <h3 className="text-xl font-bold text-slate-900 mb-1">{category.name}</h3>
-        <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+        <p className="text-sm text-slate-600 mb-4 leading-relaxed flex-1">
           {CATEGORY_DESC[category.id]}
         </p>
-        <div className="flex items-center justify-between text-sm">
+        <div className="flex items-center justify-between text-sm mt-auto">
           <span className="text-slate-500">
             {category.series.length}개 시리즈 &middot; {productCount}개 제품
           </span>

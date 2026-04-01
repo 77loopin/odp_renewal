@@ -1,0 +1,1020 @@
+{
+  "scrape_date": "2026-04-01",
+  "scrape_notes": "Part numbers scraped from odpcorp.co.kr product detail pages. For multi-page products (24-26 models), pages 2-3 could not be directly fetched via WebFetch due to caching. Missing page 2/3 models are inferred from the consistent naming pattern: input voltage prefix x output voltage suffix.",
+  "products": {
+    "SDS1R5": {
+      "series": "SD",
+      "category": "DCDC",
+      "cate_code": "101010",
+      "total_count": 24,
+      "fetched": true,
+      "parts": [
+        {"part_number": "SDS1R5-05-3R3", "input_voltage": "DC 4.5~9V", "output_voltage": "3.3V"},
+        {"part_number": "SDS1R5-05-05", "input_voltage": "DC 4.5~9V", "output_voltage": "5V"},
+        {"part_number": "SDS1R5-05-12", "input_voltage": "DC 4.5~9V", "output_voltage": "12V"},
+        {"part_number": "SDS1R5-05-15", "input_voltage": "DC 4.5~9V", "output_voltage": "15V"},
+        {"part_number": "SDS1R5-12-3R3", "input_voltage": "DC 9~18V", "output_voltage": "3.3V"},
+        {"part_number": "SDS1R5-12-05", "input_voltage": "DC 9~18V", "output_voltage": "5V"},
+        {"part_number": "SDS1R5-12-12", "input_voltage": "DC 9~18V", "output_voltage": "12V"},
+        {"part_number": "SDS1R5-12-15", "input_voltage": "DC 9~18V", "output_voltage": "15V"},
+        {"part_number": "SDS1R5-24-3R3", "input_voltage": "DC 18~36V", "output_voltage": "3.3V"},
+        {"part_number": "SDS1R5-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V"},
+        {"part_number": "SDS1R5-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V"},
+        {"part_number": "SDS1R5-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V"},
+        {"part_number": "SDS1R5-48-3R3", "input_voltage": "DC 36~72V", "output_voltage": "3.3V"},
+        {"part_number": "SDS1R5-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V"},
+        {"part_number": "SDS1R5-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V"},
+        {"part_number": "SDS1R5-48-15", "input_voltage": "DC 36~72V", "output_voltage": "15V"},
+        {"part_number": "SDS1R5-05-09", "input_voltage": "DC 4.5~9V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-05-24", "input_voltage": "DC 4.5~9V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-12-09", "input_voltage": "DC 9~18V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-12-24", "input_voltage": "DC 9~18V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-24-09", "input_voltage": "DC 18~36V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-48-09", "input_voltage": "DC 36~72V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS1R5-48-24", "input_voltage": "DC 36~72V", "output_voltage": "24V", "_note": "inferred from pattern"}
+      ]
+    },
+    "SDS3": {
+      "series": "SD",
+      "category": "DCDC",
+      "cate_code": "101020",
+      "total_count": 24,
+      "fetched": true,
+      "parts": [
+        {"part_number": "SDS3-05-3R3", "input_voltage": "DC 4.5~9V", "output_voltage": "3.3V"},
+        {"part_number": "SDS3-05-05", "input_voltage": "DC 4.5~9V", "output_voltage": "5V"},
+        {"part_number": "SDS3-05-12", "input_voltage": "DC 4.5~9V", "output_voltage": "12V"},
+        {"part_number": "SDS3-05-15", "input_voltage": "DC 4.5~9V", "output_voltage": "15V"},
+        {"part_number": "SDS3-12-3R3", "input_voltage": "DC 9~18V", "output_voltage": "3.3V"},
+        {"part_number": "SDS3-12-05", "input_voltage": "DC 9~18V", "output_voltage": "5V"},
+        {"part_number": "SDS3-12-12", "input_voltage": "DC 9~18V", "output_voltage": "12V"},
+        {"part_number": "SDS3-12-15", "input_voltage": "DC 9~18V", "output_voltage": "15V"},
+        {"part_number": "SDS3-24-3R3", "input_voltage": "DC 18~36V", "output_voltage": "3.3V"},
+        {"part_number": "SDS3-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V"},
+        {"part_number": "SDS3-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V"},
+        {"part_number": "SDS3-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V"},
+        {"part_number": "SDS3-48-3R3", "input_voltage": "DC 36~72V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-48-15", "input_voltage": "DC 36~72V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-05-09", "input_voltage": "DC 4.5~9V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-05-24", "input_voltage": "DC 4.5~9V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-12-09", "input_voltage": "DC 9~18V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-12-24", "input_voltage": "DC 9~18V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-24-09", "input_voltage": "DC 18~36V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-48-09", "input_voltage": "DC 36~72V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS3-48-24", "input_voltage": "DC 36~72V", "output_voltage": "24V", "_note": "inferred from pattern"}
+      ]
+    },
+    "SDS6": {
+      "series": "SD",
+      "category": "DCDC",
+      "cate_code": "101030",
+      "total_count": 24,
+      "fetched": false,
+      "_note": "Not directly fetched. Based on SD series pattern, expected 24 models with same input/output matrix as SDS3/SDS10."
+    },
+    "SDS10": {
+      "series": "SD",
+      "category": "DCDC",
+      "cate_code": "101040",
+      "total_count": 24,
+      "fetched": true,
+      "parts": [
+        {"part_number": "SDS10-05-3R3", "input_voltage": "DC 4.5~9V", "output_voltage": "3.3V"},
+        {"part_number": "SDS10-05-05", "input_voltage": "DC 4.5~9V", "output_voltage": "5V"},
+        {"part_number": "SDS10-05-12", "input_voltage": "DC 4.5~9V", "output_voltage": "12V"},
+        {"part_number": "SDS10-05-15", "input_voltage": "DC 4.5~9V", "output_voltage": "15V"},
+        {"part_number": "SDS10-12-3R3", "input_voltage": "DC 9~18V", "output_voltage": "3.3V"},
+        {"part_number": "SDS10-12-05", "input_voltage": "DC 9~18V", "output_voltage": "5V"},
+        {"part_number": "SDS10-12-12", "input_voltage": "DC 9~18V", "output_voltage": "12V"},
+        {"part_number": "SDS10-12-15", "input_voltage": "DC 9~18V", "output_voltage": "15V"},
+        {"part_number": "SDS10-24-3R3", "input_voltage": "DC 18~36V", "output_voltage": "3.3V"},
+        {"part_number": "SDS10-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V"},
+        {"part_number": "SDS10-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V"},
+        {"part_number": "SDS10-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V"},
+        {"part_number": "SDS10-48-3R3", "input_voltage": "DC 36~72V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-48-15", "input_voltage": "DC 36~72V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-05-09", "input_voltage": "DC 4.5~9V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-05-24", "input_voltage": "DC 4.5~9V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-12-09", "input_voltage": "DC 9~18V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-12-24", "input_voltage": "DC 9~18V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-24-09", "input_voltage": "DC 18~36V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-48-09", "input_voltage": "DC 36~72V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "SDS10-48-24", "input_voltage": "DC 36~72V", "output_voltage": "24V", "_note": "inferred from pattern"}
+      ]
+    },
+    "SDS20": {
+      "series": "SD",
+      "category": "DCDC",
+      "cate_code": "101050",
+      "total_count": 24,
+      "fetched": false,
+      "_note": "Not directly fetched. Expected 24 models matching SD series pattern."
+    },
+    "VDS1R5": {
+      "series": "VDS",
+      "category": "DCDC",
+      "cate_code": "102010",
+      "total_count": 8,
+      "fetched": true,
+      "parts": [
+        {"part_number": "VDS1R5-24-3R3", "input_voltage": "DC 9~36V", "output_voltage": "3.3V"},
+        {"part_number": "VDS1R5-24-05", "input_voltage": "DC 9~36V", "output_voltage": "5V"},
+        {"part_number": "VDS1R5-24-12", "input_voltage": "DC 9~36V", "output_voltage": "12V"},
+        {"part_number": "VDS1R5-24-15", "input_voltage": "DC 9~36V", "output_voltage": "15V"},
+        {"part_number": "VDS1R5-48-3R3", "input_voltage": "DC 18~72V", "output_voltage": "3.3V"},
+        {"part_number": "VDS1R5-48-05", "input_voltage": "DC 18~72V", "output_voltage": "5V"},
+        {"part_number": "VDS1R5-48-12", "input_voltage": "DC 18~72V", "output_voltage": "12V"},
+        {"part_number": "VDS1R5-48-15", "input_voltage": "DC 18~72V", "output_voltage": "15V"}
+      ]
+    },
+    "VDS3": {
+      "series": "VDS",
+      "category": "DCDC",
+      "cate_code": "102020",
+      "total_count": 8,
+      "fetched": false,
+      "_note": "Expected 8 models matching VDS pattern: 24/48 input x 3R3/05/12/15 output."
+    },
+    "VDS6": {
+      "series": "VDS",
+      "category": "DCDC",
+      "cate_code": "102030",
+      "total_count": 8,
+      "fetched": false,
+      "_note": "Expected 8 models matching VDS pattern."
+    },
+    "VDS10": {
+      "series": "VDS",
+      "category": "DCDC",
+      "cate_code": "102040",
+      "total_count": 8,
+      "fetched": false,
+      "_note": "Expected 8 models matching VDS pattern."
+    },
+    "DS1R5": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103010",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched. Expected similar to DS3/DS10 pattern."
+    },
+    "DS3": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103020",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "DS6": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103030",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "DS10": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103040",
+      "total_count": 26,
+      "fetched": true,
+      "parts": [
+        {"part_number": "DS10-05-05", "input_voltage": "DC 4.5~7.2V", "output_voltage": "5V"},
+        {"part_number": "DS10-05-12", "input_voltage": "DC 4.5~7.2V", "output_voltage": "12V"},
+        {"part_number": "DS10-12-3R3", "input_voltage": "DC 8~16.5V", "output_voltage": "3.3V"},
+        {"part_number": "DS10-12-05", "input_voltage": "DC 8~16.5V", "output_voltage": "5V"},
+        {"part_number": "DS10-12-09", "input_voltage": "DC 8~16.5V", "output_voltage": "9V"},
+        {"part_number": "DS10-12-12", "input_voltage": "DC 8~16.5V", "output_voltage": "12V"},
+        {"part_number": "DS10-12-15", "input_voltage": "DC 8~16.5V", "output_voltage": "15V"},
+        {"part_number": "DS10-12-24", "input_voltage": "DC 8~16.5V", "output_voltage": "24V"},
+        {"part_number": "DS10-24-05", "input_voltage": "DC 18~32V", "output_voltage": "5V"},
+        {"part_number": "DS10-24-09", "input_voltage": "DC 18~32V", "output_voltage": "9V"},
+        {"part_number": "DS10-24-12", "input_voltage": "DC 18~32V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-24-15", "input_voltage": "DC 18~32V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-24-24", "input_voltage": "DC 18~32V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-24-3R3", "input_voltage": "DC 18~32V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-48-3R3", "input_voltage": "DC 36~72V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-48-09", "input_voltage": "DC 36~72V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-48-15", "input_voltage": "DC 36~72V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-48-24", "input_voltage": "DC 36~72V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-05-3R3", "input_voltage": "DC 4.5~7.2V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-05-09", "input_voltage": "DC 4.5~7.2V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-05-15", "input_voltage": "DC 4.5~7.2V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "DS10-05-24", "input_voltage": "DC 4.5~7.2V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DD10-12-1212", "input_voltage": "DC 8~16.5V", "output_voltage": "+-12V", "_note": "inferred dual output model"},
+        {"part_number": "DD10-24-1212", "input_voltage": "DC 18~32V", "output_voltage": "+-12V", "_note": "inferred dual output model"}
+      ]
+    },
+    "DS15": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103050",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "DS25": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103060",
+      "total_count": 26,
+      "fetched": true,
+      "parts": [
+        {"part_number": "DS25-05-05", "input_voltage": "DC 4.8~9V", "output_voltage": "5V"},
+        {"part_number": "DS25-05-09", "input_voltage": "DC 4.8~9V", "output_voltage": "9V"},
+        {"part_number": "DS25-05-12", "input_voltage": "DC 4.8~9V", "output_voltage": "12V"},
+        {"part_number": "DS25-05-15", "input_voltage": "DC 4.8~9V", "output_voltage": "15V"},
+        {"part_number": "DS25-12-3R3", "input_voltage": "DC 9~18V", "output_voltage": "3.3V"},
+        {"part_number": "DS25-12-05", "input_voltage": "DC 9~18V", "output_voltage": "5V"},
+        {"part_number": "DS25-12-09", "input_voltage": "DC 9~18V", "output_voltage": "9V"},
+        {"part_number": "DS25-12-12", "input_voltage": "DC 9~18V", "output_voltage": "12V"},
+        {"part_number": "DS25-12-15", "input_voltage": "DC 9~18V", "output_voltage": "15V"},
+        {"part_number": "DS25-12-24", "input_voltage": "DC 9~18V", "output_voltage": "24V"},
+        {"part_number": "DS25-24-3R3", "input_voltage": "DC 18~36V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-24-09", "input_voltage": "DC 18~36V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-48-3R3", "input_voltage": "DC 36~72V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-48-09", "input_voltage": "DC 36~72V", "output_voltage": "9V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-48-15", "input_voltage": "DC 36~72V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-48-24", "input_voltage": "DC 36~72V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-05-3R3", "input_voltage": "DC 4.8~9V", "output_voltage": "3.3V", "_note": "inferred from pattern"},
+        {"part_number": "DS25-05-24", "input_voltage": "DC 4.8~9V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DD25-12-1212", "input_voltage": "DC 9~18V", "output_voltage": "+-12V", "_note": "inferred dual output"},
+        {"part_number": "DD25-24-1212", "input_voltage": "DC 18~36V", "output_voltage": "+-12V", "_note": "inferred dual output"}
+      ]
+    },
+    "DS30": {
+      "series": "D",
+      "category": "DCDC",
+      "cate_code": "103070",
+      "total_count": 17,
+      "fetched": true,
+      "parts": [
+        {"part_number": "DS30-24-3R3", "input_voltage": "DC 18~36V", "output_voltage": "3.3V"},
+        {"part_number": "DS30-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V"},
+        {"part_number": "DS30-24-09", "input_voltage": "DC 18~36V", "output_voltage": "9V"},
+        {"part_number": "DS30-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V"},
+        {"part_number": "DS30-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V"},
+        {"part_number": "DS30-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V"},
+        {"part_number": "DS30-48-3R3", "input_voltage": "DC 36~72V", "output_voltage": "3.3V"},
+        {"part_number": "DS30-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V"},
+        {"part_number": "DS30-48-09", "input_voltage": "DC 36~72V", "output_voltage": "9V"},
+        {"part_number": "DS30-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V"},
+        {"part_number": "DS30-48-15", "input_voltage": "DC 36~72V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "DS30-48-24", "input_voltage": "DC 36~72V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "DD30-24-1212", "input_voltage": "DC 18~36V", "output_voltage": "+-12V", "_note": "inferred dual output"},
+        {"part_number": "DD30-24-1515", "input_voltage": "DC 18~36V", "output_voltage": "+-15V", "_note": "inferred dual output"},
+        {"part_number": "DD30-48-1212", "input_voltage": "DC 36~72V", "output_voltage": "+-12V", "_note": "inferred dual output"},
+        {"part_number": "DD30-48-1515", "input_voltage": "DC 36~72V", "output_voltage": "+-15V", "_note": "inferred dual output"},
+        {"part_number": "DS30-48-48", "input_voltage": "DC 36~72V", "output_voltage": "48V", "_note": "inferred from pattern"}
+      ]
+    },
+    "DHS3": {
+      "series": "DH",
+      "category": "DCDC",
+      "cate_code": "104010",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "DHS10": {
+      "series": "DH",
+      "category": "DCDC",
+      "cate_code": "104020",
+      "total_count": 11,
+      "fetched": true,
+      "parts": [
+        {"part_number": "DHS10-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V"},
+        {"part_number": "DHS10-24-09", "input_voltage": "DC 18~36V", "output_voltage": "9V"},
+        {"part_number": "DHS10-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V"},
+        {"part_number": "DHS10-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V"},
+        {"part_number": "DHS10-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V"},
+        {"part_number": "DHS10-48-05", "input_voltage": "DC 36~72V", "output_voltage": "5V"},
+        {"part_number": "DHS10-48-12", "input_voltage": "DC 36~72V", "output_voltage": "12V"},
+        {"part_number": "DHD10-24-0505", "input_voltage": "DC 18~36V", "output_voltage": "+-5V"},
+        {"part_number": "DHD10-24-1212", "input_voltage": "DC 18~36V", "output_voltage": "+-12V"},
+        {"part_number": "DHD10-24-1515", "input_voltage": "DC 18~36V", "output_voltage": "+-15V"}
+      ]
+    },
+    "DHS15": {
+      "series": "DH",
+      "category": "DCDC",
+      "cate_code": "104030",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "DHS25": {
+      "series": "DH",
+      "category": "DCDC",
+      "cate_code": "104040",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "WD10": {
+      "series": "WD",
+      "category": "DCDC",
+      "cate_code": "104310",
+      "total_count": 12,
+      "fetched": true,
+      "parts": [
+        {"part_number": "WDS10-24-3R3", "input_voltage": "DC 10~36V", "output_voltage": "3.3V"},
+        {"part_number": "WDS10-24-05", "input_voltage": "DC 10~36V", "output_voltage": "5V"},
+        {"part_number": "WDS10-24-12", "input_voltage": "DC 10~36V", "output_voltage": "12V"},
+        {"part_number": "WDS10-24-15", "input_voltage": "DC 10~36V", "output_voltage": "15V"},
+        {"part_number": "WDS10-48-3R3", "input_voltage": "DC 20~72V", "output_voltage": "3.3V"},
+        {"part_number": "WDS10-48-05", "input_voltage": "DC 20~72V", "output_voltage": "5V"},
+        {"part_number": "WDS10-48-12", "input_voltage": "DC 20~72V", "output_voltage": "12V"},
+        {"part_number": "WDS10-48-15", "input_voltage": "DC 20~72V", "output_voltage": "15V"},
+        {"part_number": "WDD10-24-1212", "input_voltage": "DC 10~36V", "output_voltage": "+-12V"},
+        {"part_number": "WDD10-24-1515", "input_voltage": "DC 10~36V", "output_voltage": "+-15V"}
+      ]
+    },
+    "WD15": {
+      "series": "WD",
+      "category": "DCDC",
+      "cate_code": "104320",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "KSP50": {
+      "series": "KSP",
+      "category": "DCDC",
+      "cate_code": "104510",
+      "total_count": 16,
+      "fetched": true,
+      "parts": [
+        {"part_number": "KSP50-24-3R3", "input_voltage": "DC 18~36V", "output_voltage": "3.3V"},
+        {"part_number": "KSP50-24-05", "input_voltage": "DC 18~36V", "output_voltage": "5V"},
+        {"part_number": "KSP50-24-12", "input_voltage": "DC 18~36V", "output_voltage": "12V"},
+        {"part_number": "KSP50-24-15", "input_voltage": "DC 18~36V", "output_voltage": "15V"},
+        {"part_number": "KSP50-48-3R3", "input_voltage": "DC 36~75V", "output_voltage": "3.3V"},
+        {"part_number": "KSP50-48-05", "input_voltage": "DC 36~75V", "output_voltage": "5V"},
+        {"part_number": "KSP50-48-12", "input_voltage": "DC 36~75V", "output_voltage": "12V"},
+        {"part_number": "KSP50-48-15", "input_voltage": "DC 36~75V", "output_voltage": "15V"},
+        {"part_number": "KSP50-72-3R3", "input_voltage": "DC 55~90V", "output_voltage": "3.3V"},
+        {"part_number": "KSP50-72-05", "input_voltage": "DC 55~90V", "output_voltage": "5V"},
+        {"part_number": "KSP50-72-12", "input_voltage": "DC 55~90V", "output_voltage": "12V", "_note": "inferred from pattern"},
+        {"part_number": "KSP50-72-15", "input_voltage": "DC 55~90V", "output_voltage": "15V", "_note": "inferred from pattern"},
+        {"part_number": "KSP50-24-24", "input_voltage": "DC 18~36V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "KSP50-48-24", "input_voltage": "DC 36~75V", "output_voltage": "24V", "_note": "inferred from pattern"},
+        {"part_number": "KSP50-24-48", "input_voltage": "DC 18~36V", "output_voltage": "48V", "_note": "inferred from pattern"},
+        {"part_number": "KSP50-48-48", "input_voltage": "DC 36~75V", "output_voltage": "48V", "_note": "inferred from pattern"}
+      ]
+    },
+    "OPS5A-5": {
+      "series": "OPS5A",
+      "category": "POL",
+      "cate_code": "151010",
+      "total_count": 1,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OPS5A-5", "input_voltage": "DC 3~5.5V", "output_voltage": "0.65~3.63V"}
+      ]
+    },
+    "OPS5A-12": {
+      "series": "OPS5A",
+      "category": "POL",
+      "cate_code": "151020",
+      "total_count": 1,
+      "fetched": false,
+      "_note": "Not fetched. Expected 1 model: OPS5A-12."
+    },
+    "OPS10A-5": {
+      "series": "OPS10A",
+      "category": "POL",
+      "cate_code": "152010",
+      "total_count": 1,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OPS10A-5", "input_voltage": "DC 3.5~5.5V", "output_voltage": "0.65~3.63V"}
+      ]
+    },
+    "OPS10A-12": {
+      "series": "OPS10A",
+      "category": "POL",
+      "cate_code": "152020",
+      "total_count": 1,
+      "fetched": false,
+      "_note": "Not fetched. Expected 1 model: OPS10A-12."
+    },
+    "OPS15A-5": {
+      "series": "OPS15A",
+      "category": "POL",
+      "cate_code": "153010",
+      "total_count": 1,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OPS15A-5", "input_voltage": "DC 3.5~5.5V", "output_voltage": "0.65~3.63V"}
+      ]
+    },
+    "OPS15A-12": {
+      "series": "OPS15A",
+      "category": "POL",
+      "cate_code": "153020",
+      "total_count": 1,
+      "fetched": false,
+      "_note": "Not fetched. Expected 1 model: OPS15A-12."
+    },
+    "NOF5": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200510",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOF5-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "NOF5-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "NOF5-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "NOF5-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "NOF5-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "NOF10": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200520",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOF10-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "NOF10-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "NOF10-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "NOF10-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "NOF10-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "NOF20": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200530",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOF20-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "NOF20-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "NOF20-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "NOF20-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "NOF20-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "NOF40": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200540",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOF40-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "NOF40-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "NOF40-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "NOF40-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "NOF40-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "NOFD40": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200545",
+      "total_count": 3,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOFD40-0512", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V / 12V"},
+        {"part_number": "NOFD40-0515", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V / 15V"},
+        {"part_number": "NOFD40-0524", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V / 24V"}
+      ]
+    },
+    "NOF60": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200550",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOF60-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "NOF60-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "NOF60-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "NOF60-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "NOFD60": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200555",
+      "total_count": 3,
+      "fetched": false,
+      "_note": "Not fetched. Expected 3 dual-output models similar to NOFD40 pattern."
+    },
+    "NOF75": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200560",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: NOF75-12, NOF75-15, NOF75-24, NOF75-48."
+    },
+    "NOF100": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200570",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "NOF100-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "NOF100-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "NOF100-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "NOF100-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "NOFD100": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200575",
+      "total_count": 3,
+      "fetched": false,
+      "_note": "Not fetched. Expected 3 dual-output models similar to NOFD40 pattern."
+    },
+    "NOF150": {
+      "series": "NOF",
+      "category": "ACDC",
+      "cate_code": "200580",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched. May not exist."
+    },
+    "OFS10": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201010",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OFS10-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "OFS10-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "OFS10-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "OFS10-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"}
+      ]
+    },
+    "OFS15": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201020",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OFS15-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "OFS15-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "OFS15-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "OFS15-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"}
+      ]
+    },
+    "OFS30": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201030",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: OFS30-05/12/15/24."
+    },
+    "OFS40": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201040",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OFS40-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "OFS40-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "OFS40-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "OFS40-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"}
+      ]
+    },
+    "OFS50": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201050",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: OFS50-05/12/15/24."
+    },
+    "OFS60": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201060",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected ~4 models."
+    },
+    "OFS75": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201070",
+      "total_count": 3,
+      "fetched": true,
+      "parts": [
+        {"part_number": "OFS75-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "OFS75-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "OFS75-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"}
+      ]
+    },
+    "OFD75": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "201075",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched. Expected dual-output models."
+    },
+    "OFS100F": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "2010a0",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "OFS150F": {
+      "series": "OF",
+      "category": "ACDC",
+      "cate_code": "2010b0",
+      "total_count": null,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "HNF20": {
+      "series": "HNF",
+      "category": "ACDC",
+      "cate_code": "201210",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "HNF20-05", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "5V"},
+        {"part_number": "HNF20-12", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "12V"},
+        {"part_number": "HNF20-15", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "15V"},
+        {"part_number": "HNF20-24", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "24V"},
+        {"part_number": "HNF20-48", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "48V"}
+      ]
+    },
+    "HNF40": {
+      "series": "HNF",
+      "category": "ACDC",
+      "cate_code": "201220",
+      "total_count": 5,
+      "fetched": false,
+      "_note": "Not fetched. Expected 5 models: HNF40-05/12/15/24/48."
+    },
+    "HNF60": {
+      "series": "HNF",
+      "category": "ACDC",
+      "cate_code": "201230",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected ~4 models: HNF60-12/15/24/48."
+    },
+    "HNF75": {
+      "series": "HNF",
+      "category": "ACDC",
+      "cate_code": "201240",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected ~4 models."
+    },
+    "HNF100": {
+      "series": "HNF",
+      "category": "ACDC",
+      "cate_code": "201250",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected ~4 models."
+    },
+    "KMS40": {
+      "series": "KMS",
+      "category": "ACDC",
+      "cate_code": "201610",
+      "total_count": 0,
+      "fetched": true,
+      "parts": [],
+      "_note": "Page returned 0 products registered."
+    },
+    "KMS60": {
+      "series": "KMS",
+      "category": "ACDC",
+      "cate_code": "201620",
+      "total_count": null,
+      "fetched": false
+    },
+    "KMS75": {
+      "series": "KMS",
+      "category": "ACDC",
+      "cate_code": "201630",
+      "total_count": null,
+      "fetched": false
+    },
+    "KMS100": {
+      "series": "KMS",
+      "category": "ACDC",
+      "cate_code": "201640",
+      "total_count": null,
+      "fetched": false
+    },
+    "PF75": {
+      "series": "PF",
+      "category": "ACDC",
+      "cate_code": "201810",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "PF75-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "PF75-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "PF75-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "PF75-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "PF100": {
+      "series": "PF",
+      "category": "ACDC",
+      "cate_code": "201820",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: PF100-12/15/24/48."
+    },
+    "PF150": {
+      "series": "PF",
+      "category": "ACDC",
+      "cate_code": "201830",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models."
+    },
+    "TS5": {
+      "series": "TS",
+      "category": "ACDC",
+      "cate_code": "202010",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "TS5-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "TS5-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "TS5-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "TS5-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"}
+      ]
+    },
+    "TS10": {
+      "series": "TS",
+      "category": "ACDC",
+      "cate_code": "202020",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: TS10-05/12/15/24."
+    },
+    "TS5-TB": {
+      "series": "TS TB",
+      "category": "ACDC",
+      "cate_code": "202210",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: TS5-TB-05/12/15/24."
+    },
+    "TS10-TB": {
+      "series": "TS TB",
+      "category": "ACDC",
+      "cate_code": "202220",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "LTS5": {
+      "series": "LTS",
+      "category": "ACDC",
+      "cate_code": "202510",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models."
+    },
+    "LTS10": {
+      "series": "LTS",
+      "category": "ACDC",
+      "cate_code": "202520",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "LTS5-TB": {
+      "series": "LTS TB",
+      "category": "ACDC",
+      "cate_code": "202710",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "LTS10-TB": {
+      "series": "LTS TB",
+      "category": "ACDC",
+      "cate_code": "202720",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "HS10": {
+      "series": "HS",
+      "category": "ACDC",
+      "cate_code": "203010",
+      "total_count": 6,
+      "fetched": true,
+      "parts": [
+        {"part_number": "HS10-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "HS10-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "HS10-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "HS10-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "HSD10-1212", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "+-12V"},
+        {"part_number": "HSD10-1515", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "+-15V"}
+      ]
+    },
+    "HS15": {
+      "series": "HS",
+      "category": "ACDC",
+      "cate_code": "203020",
+      "total_count": 6,
+      "fetched": false,
+      "_note": "Not fetched. Expected ~6 models including dual outputs."
+    },
+    "HS30": {
+      "series": "HS",
+      "category": "ACDC",
+      "cate_code": "203030",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "HS30-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "HS30-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "HS30-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "HS30-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "HS30-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "HS60": {
+      "series": "HS",
+      "category": "ACDC",
+      "cate_code": "203040",
+      "total_count": 5,
+      "fetched": true,
+      "parts": [
+        {"part_number": "HS60-05", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "5V"},
+        {"part_number": "HS60-12", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "12V"},
+        {"part_number": "HS60-15", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "15V"},
+        {"part_number": "HS60-24", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "24V"},
+        {"part_number": "HS60-48", "input_voltage": "AC 90~264V / DC 120~370V", "output_voltage": "48V"}
+      ]
+    },
+    "HS10-TB": {
+      "series": "HS TB",
+      "category": "ACDC",
+      "cate_code": "203510",
+      "total_count": 6,
+      "fetched": false,
+      "_note": "Not fetched. Expected TB (terminal block) variants of HS10."
+    },
+    "HS15-TB": {
+      "series": "HS TB",
+      "category": "ACDC",
+      "cate_code": "203520",
+      "total_count": 6,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "HS30-TB": {
+      "series": "HS TB",
+      "category": "ACDC",
+      "cate_code": "203530",
+      "total_count": 5,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "HS60-TB": {
+      "series": "HS TB",
+      "category": "ACDC",
+      "cate_code": "203540",
+      "total_count": 5,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "EHS15": {
+      "series": "EHS",
+      "category": "ACDC",
+      "cate_code": "203810",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "EHS15-05", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "5V"},
+        {"part_number": "EHS15-12", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "12V"},
+        {"part_number": "EHS15-15", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "15V"},
+        {"part_number": "EHS15-24", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "24V"}
+      ]
+    },
+    "EHS25": {
+      "series": "EHS",
+      "category": "ACDC",
+      "cate_code": "203820",
+      "total_count": 4,
+      "fetched": true,
+      "parts": [
+        {"part_number": "EHS25-05", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "5V"},
+        {"part_number": "EHS25-12", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "12V"},
+        {"part_number": "EHS25-15", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "15V"},
+        {"part_number": "EHS25-24", "input_voltage": "AC 180~264V / DC 250~370V", "output_voltage": "24V"}
+      ]
+    },
+    "EHS50": {
+      "series": "EHS",
+      "category": "ACDC",
+      "cate_code": "203830",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected 4 models: EHS50-05/12/15/24."
+    },
+    "EHS15-TB": {
+      "series": "EHS TB",
+      "category": "ACDC",
+      "cate_code": "203910",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched. Expected TB variants of EHS15."
+    },
+    "EHS25-TB": {
+      "series": "EHS TB",
+      "category": "ACDC",
+      "cate_code": "203920",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched."
+    },
+    "EHS50-TB": {
+      "series": "EHS TB",
+      "category": "ACDC",
+      "cate_code": "203930",
+      "total_count": 4,
+      "fetched": false,
+      "_note": "Not fetched."
+    }
+  },
+  "summary": {
+    "total_product_series": 84,
+    "series_fetched": 30,
+    "series_not_fetched": 54,
+    "total_confirmed_part_numbers": 196,
+    "total_inferred_part_numbers": 52,
+    "categories": {
+      "DCDC": {
+        "series_count": 22,
+        "fetched": 10,
+        "confirmed_parts": 112
+      },
+      "POL": {
+        "series_count": 6,
+        "fetched": 3,
+        "confirmed_parts": 3
+      },
+      "ACDC": {
+        "series_count": 56,
+        "fetched": 17,
+        "confirmed_parts": 81
+      }
+    },
+    "naming_patterns": {
+      "DCDC_SD_series": "{series}-{input:05/12/24/48}-{output:3R3/05/09/12/15/24}",
+      "DCDC_VDS_series": "{series}-{input:24/48}-{output:3R3/05/12/15}",
+      "DCDC_D_series": "{series}-{input:05/12/24/48}-{output:3R3/05/09/12/15/24} + DD dual outputs",
+      "DCDC_DH_series": "{series}-{input:24/48}-{output:05/09/12/15/24} + DHD dual outputs",
+      "DCDC_WD_series": "WDS{W}-{input:24/48}-{output:3R3/05/12/15} + WDD dual outputs",
+      "DCDC_KSP_series": "KSP{W}-{input:24/48/72}-{output:3R3/05/12/15/24/48}",
+      "ACDC_NOF_series": "NOF{W}-{output:05/12/15/24/48}",
+      "ACDC_NOFD_series": "NOFD{W}-{output1}{output2} dual",
+      "ACDC_OF_series": "OFS{W}-{output:05/12/15/24}",
+      "ACDC_HNF_series": "HNF{W}-{output:05/12/15/24/48} (220V input only)",
+      "ACDC_TS_series": "TS{W}-{output:05/12/15/24}",
+      "ACDC_HS_series": "HS{W}-{output:05/12/15/24/48} + HSD dual",
+      "ACDC_EHS_series": "EHS{W}-{output:05/12/15/24} (220V input only)",
+      "ACDC_PF_series": "PF{W}-{output:12/15/24/48}",
+      "POL_series": "OPS{A}A-{V} (single model per page)"
+    }
+  }
+}

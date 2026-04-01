@@ -1,0 +1,1533 @@
+{
+  "company": "ODP Corp (주)오디피",
+  "website": "https://www.odpcorp.co.kr",
+  "phone": "031-445-7488",
+  "scraped_date": "2026-04-01",
+  "base_url": "https://www.odpcorp.co.kr/index/s2",
+  "image_base_url": "https://www.odpcorp.co.kr/index/data/item",
+  "categories": [
+    {
+      "id": "DCDC",
+      "name": "DCDC Converter",
+      "cate_prefix": "10",
+      "series": [
+        {
+          "series_name": "SD Series",
+          "series_cate": "1010",
+          "description": "70% or more reduction in weight and size compared to previous D Series. Stability, high efficiency and innovative cost reduction.",
+          "package_type": "SMD/DIP",
+          "certifications": ["CE", "RoHS"],
+          "products": [
+            {
+              "model": "SDS1R5",
+              "model_dual": "SDD1R5",
+              "power_watts": 1.5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_5adbc280_2943965682_3af0cafb_1R5.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=101010",
+              "input_voltage_ranges": ["DC 4.5~9.0V", "DC 9.0~18.0V", "DC 18.0~36.0V", "DC 36.0~76.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.4A"},
+                {"voltage": "5.0V", "current": "0.3A"},
+                {"voltage": "12.0V", "current": "0.13A"},
+                {"voltage": "15.0V", "current": "0.1A"},
+                {"voltage": "±12.0V", "current": "0.065A"},
+                {"voltage": "±15.0V", "current": "0.05A"}
+              ],
+              "certifications": ["CE", "RoHS"]
+            },
+            {
+              "model": "SDS3",
+              "model_dual": "SDD3",
+              "power_watts": 3,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_7b3f9f6f_2943965682_fa3c0c8b_3.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=101020",
+              "input_voltage_ranges": ["DC 4.5~9.0V", "DC 9.0~18.0V", "DC 18.0~36.0V", "DC 36.0~76.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.6A"},
+                {"voltage": "5.0V", "current": "0.6A"},
+                {"voltage": "12.0V", "current": "0.25A"},
+                {"voltage": "15.0V", "current": "0.2A"},
+                {"voltage": "±12.0V", "current": "0.13A"},
+                {"voltage": "±15.0V", "current": "0.1A"}
+              ],
+              "certifications": ["CE", "RoHS"]
+            },
+            {
+              "model": "SDS6",
+              "model_dual": "SDD6",
+              "power_watts": 6,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_b30cf610_2943965682_99613a95_6.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=101030",
+              "input_voltage_ranges": ["DC 4.5~9.0V", "DC 9.0~18.0V", "DC 18.0~36.0V", "DC 36.0~76.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "1.2A"},
+                {"voltage": "5.0V", "current": "1.0A"},
+                {"voltage": "12.0V", "current": "0.5A"},
+                {"voltage": "15.0V", "current": "0.4A"},
+                {"voltage": "±12.0V", "current": "0.25A"},
+                {"voltage": "±15.0V", "current": "0.2A"}
+              ],
+              "certifications": ["CE", "RoHS"]
+            },
+            {
+              "model": "SDS10",
+              "model_dual": "SDD10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_6f8e676e_2943965682_d020b8d6_SD10.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=101040",
+              "input_voltage_ranges": ["DC 4.5~9.0V", "DC 9.0~18.0V", "DC 18.0~36.0V", "DC 36.0~76.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "1.6A"},
+                {"voltage": "5.0V", "current": "2.0A"},
+                {"voltage": "12.0V", "current": "0.9A"},
+                {"voltage": "15.0V", "current": "0.7A"},
+                {"voltage": "±12.0V", "current": "0.35A"},
+                {"voltage": "±15.0V", "current": "0.3A"}
+              ],
+              "certifications": ["CE", "RoHS"]
+            },
+            {
+              "model": "SDS20",
+              "model_dual": "SDD20",
+              "power_watts": 20,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_d5271122_2943965522_9527d3ad_2943965682_81d67cde_20.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=101050",
+              "input_voltage_ranges": ["DC 18.0~36.0V", "DC 36.0~76.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "4.0A"},
+                {"voltage": "5.0V", "current": "4.0A"},
+                {"voltage": "12.0V", "current": "1.7A"},
+                {"voltage": "15.0V", "current": "1.4A"},
+                {"voltage": "±12.0V", "current": "0.85A"},
+                {"voltage": "±15.0V", "current": "0.7A"}
+              ],
+              "certifications": ["CB", "CE", "RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "VDS Series",
+          "series_cate": "1020",
+          "description": "SIP (Single Inline Package) type isolated DC-DC converters for industrial electrical equipment, electronic control devices, and telecommunications. Wide input range.",
+          "package_type": "SIP",
+          "features": ["Wide input range", "SIP Type package", "Operating temp: -40 to +85C", "5-year warranty", "Input/output isolation"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "VDS1R5",
+              "power_watts": 1.5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_9b589b42_V1R5_EBA6ACEC8AA4ED8AB8_EC98A4ED9488ECBC80EC9DB4EC8AA4.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=102010",
+              "input_voltage_ranges": ["DC 9.0~36.0V", "DC 18.0~72.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.4A"},
+                {"voltage": "5.0V", "current": "0.3A"},
+                {"voltage": "12.0V", "current": "0.13A"},
+                {"voltage": "15.0V", "current": "0.1A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "VDS3",
+              "power_watts": 3,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_1a24ba24_V3_EBA6ACEC8AA4ED8AB8_EC98A4ED9488ECBC80EC9DB4EC8AA4.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=102020",
+              "input_voltage_ranges": ["DC 9.0~36.0V", "DC 18.0~72.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.8A"},
+                {"voltage": "5.0V", "current": "0.6A"},
+                {"voltage": "12.0V", "current": "0.25A"},
+                {"voltage": "15.0V", "current": "0.2A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "VDS6",
+              "power_watts": 6,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_9df396e7_V6_EBA6ACEC8AA4ED8AB8_EC98A4ED9488ECBC80EC9DB4EC8AA4.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=102030",
+              "input_voltage_ranges": ["DC 9.0~36.0V", "DC 18.0~72.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "1.6A"},
+                {"voltage": "5.0V", "current": "1.2A"},
+                {"voltage": "12.0V", "current": "0.5A"},
+                {"voltage": "15.0V", "current": "0.4A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "VDS10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_facdbc32_V10_EBA6ACEC8AA4ED8AB8_EC98A4ED9488ECBC80EC9DB4EC8AA4.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=102040",
+              "input_voltage_ranges": ["DC 9.0~36.0V", "DC 18.0~72.0V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "2.6A"},
+                {"voltage": "5.0V", "current": "2.0A"},
+                {"voltage": "12.0V", "current": "0.9A"},
+                {"voltage": "15.0V", "current": "0.7A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "D Series",
+          "series_cate": "1030",
+          "description": "PCB On Board Mounting Type. 2:1 input voltage range, high efficiency, low weight, current/short protection, external on/off control, adjustable output voltage (+-10%), RoHS, isolation, low ripple noise.",
+          "package_type": "PCB On Board DIP",
+          "features": ["2:1 input voltage range", "High efficiency", "Current/short protection", "External ON/OFF control", "Adjustable output +-10%", "Low ripple noise", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "DS1R5",
+              "model_dual": "DD1R5",
+              "power_watts": 1.5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_c040edb5_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103010",
+              "input_voltage_ranges": ["DC 4.5~7.2V", "DC 8.0~16.5V", "DC 18~32V", "DC 32~63V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.3A"},
+                {"voltage": "5.0V", "current": "0.3A"},
+                {"voltage": "9.0V", "current": "0.17A"},
+                {"voltage": "12.0V", "current": "0.125A"},
+                {"voltage": "15.0V", "current": "0.1A"},
+                {"voltage": "24.0V", "current": "0.06A"},
+                {"voltage": "±5V", "current": "0.15A"},
+                {"voltage": "±12V", "current": "0.065A"},
+                {"voltage": "±15V", "current": "0.05A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DS3",
+              "model_dual": "DD3",
+              "power_watts": 3,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_36e0459c_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103020",
+              "input_voltage_ranges": ["DC 4.5~7.2V", "DC 8.0~16.5V", "DC 18~32V", "DC 32~63V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.7A"},
+                {"voltage": "5.0V", "current": "0.6A"},
+                {"voltage": "9.0V", "current": "0.34A"},
+                {"voltage": "12.0V", "current": "0.25A"},
+                {"voltage": "15.0V", "current": "0.2A"},
+                {"voltage": "24.0V", "current": "0.125A"},
+                {"voltage": "±5V", "current": "0.3A"},
+                {"voltage": "±12V", "current": "0.125A"},
+                {"voltage": "±15V", "current": "0.1A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DS6",
+              "model_dual": "DD6",
+              "power_watts": 6,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_fab8051a_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103030",
+              "input_voltage_ranges": ["DC 4.5~7.2V", "DC 8.0~16.5V", "DC 18~32V", "DC 32~63V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "1.2A"},
+                {"voltage": "5.0V", "current": "1.0A"},
+                {"voltage": "9.0V", "current": "0.55A"},
+                {"voltage": "12.0V", "current": "0.45A"},
+                {"voltage": "15.0V", "current": "0.35A"},
+                {"voltage": "24.0V", "current": "0.2A"},
+                {"voltage": "±5V", "current": "0.5A"},
+                {"voltage": "±12V", "current": "0.23A"},
+                {"voltage": "±15V", "current": "0.18A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DS10",
+              "model_dual": "DD10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_8257877b_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103040",
+              "input_voltage_ranges": ["DC 4.5~7.2V", "DC 8.0~16.5V", "DC 18~32V", "DC 32~63V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "1.8A"},
+                {"voltage": "5.0V", "current": "1.6A"},
+                {"voltage": "9.0V", "current": "0.8A"},
+                {"voltage": "12.0V", "current": "0.7A"},
+                {"voltage": "15.0V", "current": "0.6A"},
+                {"voltage": "24.0V", "current": "0.33A"},
+                {"voltage": "±5V", "current": "0.8A"},
+                {"voltage": "±12V", "current": "0.35A"},
+                {"voltage": "±15V", "current": "0.3A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DS15",
+              "model_dual": "DD15",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_0dd6c761_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103050",
+              "input_voltage_ranges": ["DC 4.5~7.2V", "DC 8.0~16.5V", "DC 18~32V", "DC 32~63V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "2.4A"},
+                {"voltage": "5.0V", "current": "2.8A"},
+                {"voltage": "9.0V", "current": "1.6A"},
+                {"voltage": "12.0V", "current": "1.25A"},
+                {"voltage": "15.0V", "current": "1.0A"},
+                {"voltage": "24.0V", "current": "0.63A"},
+                {"voltage": "±5V", "current": "1.5A"},
+                {"voltage": "±12V", "current": "0.6A"},
+                {"voltage": "±15V", "current": "0.5A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DS25",
+              "model_dual": "DD25",
+              "power_watts": 25,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_c97638b1_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103060",
+              "input_voltage_ranges": ["DC 4.8~9.0V", "DC 9.0~18V", "DC 18~36V", "DC 36~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "4.0A"},
+                {"voltage": "5.0V", "current": "4.2A"},
+                {"voltage": "9.0V", "current": "2.4A"},
+                {"voltage": "12.0V", "current": "2.1A"},
+                {"voltage": "15.0V", "current": "1.7A"},
+                {"voltage": "24.0V", "current": "1.05A"},
+                {"voltage": "±5V", "current": "2.1A"},
+                {"voltage": "±12V", "current": "1.05A"},
+                {"voltage": "±15V", "current": "0.85A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DS30",
+              "model_dual": "DD30",
+              "power_watts": 30,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_57ba492f_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=103070",
+              "input_voltage_ranges": ["DC 18~36V", "DC 36~72V", "DC 55~105V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "5.0A"},
+                {"voltage": "5.0V", "current": "5.0A"},
+                {"voltage": "9.0V", "current": "3.3A"},
+                {"voltage": "12.0V", "current": "2.5A"},
+                {"voltage": "15.0V", "current": "2.0A"},
+                {"voltage": "24.0V", "current": "1.25A"},
+                {"voltage": "±12V", "current": "1.25A"},
+                {"voltage": "±15V", "current": "1.0A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "DH Series",
+          "series_cate": "1040",
+          "description": "2:1 input voltage range, high efficiency, compact/lightweight. Output overcurrent and short-circuit protection, external ON/OFF control, adjustable output +-10%.",
+          "package_type": "PCB On Board DIP",
+          "features": ["2:1 input voltage range", "High efficiency", "Compact/lightweight", "External ON/OFF", "Adjustable output +-10%", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "DHS3",
+              "model_dual": "DHD3",
+              "power_watts": 3,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_06d80279_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104010",
+              "input_voltage_ranges": ["DC 18~36V", "DC 36~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "0.7A"},
+                {"voltage": "5.0V", "current": "0.6A"},
+                {"voltage": "9.0V", "current": "0.33A"},
+                {"voltage": "12.0V", "current": "0.25A"},
+                {"voltage": "15.0V", "current": "0.2A"},
+                {"voltage": "24.0V", "current": "0.125A"},
+                {"voltage": "±5V", "current": "0.3A"},
+                {"voltage": "±12V", "current": "0.125A"},
+                {"voltage": "±15V", "current": "0.1A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DHS10",
+              "model_dual": "DHD10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_7bd722f6_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104020",
+              "input_voltage_ranges": ["DC 18~36V", "DC 36~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "2.3A"},
+                {"voltage": "5.0V", "current": "2.0A"},
+                {"voltage": "9.0V", "current": "1.2A"},
+                {"voltage": "12.0V", "current": "0.9A"},
+                {"voltage": "15.0V", "current": "0.7A"},
+                {"voltage": "24.0V", "current": "0.45A"},
+                {"voltage": "±5V", "current": "1.0A"},
+                {"voltage": "±12V", "current": "0.45A"},
+                {"voltage": "±15V", "current": "0.34A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DHS15",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_a5b2c845_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104030",
+              "input_voltage_ranges": ["DC 18~36V", "DC 36~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "2.8A"},
+                {"voltage": "5.0V", "current": "2.8A"},
+                {"voltage": "9.0V", "current": "1.6A"},
+                {"voltage": "12.0V", "current": "1.25A"},
+                {"voltage": "15.0V", "current": "1.0A"},
+                {"voltage": "24.0V", "current": "0.63A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "DHS25",
+              "power_watts": 25,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_342ffc84_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104040",
+              "input_voltage_ranges": ["DC 18~36V", "DC 36~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "4.0A"},
+                {"voltage": "5.0V", "current": "4.2A"},
+                {"voltage": "9.0V", "current": "2.8A"},
+                {"voltage": "12.0V", "current": "2.1A"},
+                {"voltage": "15.0V", "current": "1.7A"},
+                {"voltage": "24.0V", "current": "1.05A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "WD Series",
+          "series_cate": "1043",
+          "description": "4:1 Wide Input Range DC-DC converters with synchronous rectification, ceramic capacitors, wide operating temperature -40 to +85C.",
+          "package_type": "DIP",
+          "features": ["4:1 Wide Input Range", "Synchronous rectification", "Ceramic capacitors", "-40 to +85C", "OCP/OVP protection", "Adjustable output", "External ON/OFF", "5-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "WD10",
+              "model_dual": "WDD10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_60ee705f_WD10_REV_02.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104310",
+              "input_voltage_ranges": ["DC 10~36V", "DC 20~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "2.5A"},
+                {"voltage": "5.0V", "current": "2.0A"},
+                {"voltage": "12.0V", "current": "0.9A"},
+                {"voltage": "15.0V", "current": "0.7A"},
+                {"voltage": "±12V", "current": "0.45A"},
+                {"voltage": "±15V", "current": "0.35A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "WD15",
+              "model_dual": "WDD15",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_d3b44e65_WD10_REV_02.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104320",
+              "input_voltage_ranges": ["DC 10~36V", "DC 20~72V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "4.0A"},
+                {"voltage": "5.0V", "current": "3.0A"},
+                {"voltage": "12.0V", "current": "1.25A"},
+                {"voltage": "15.0V", "current": "1.0A"},
+                {"voltage": "±12V", "current": "0.625A"},
+                {"voltage": "±15V", "current": "0.5A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "KSP Series",
+          "series_cate": "1045",
+          "description": "High-power DC-DC converter with up to 93% efficiency, 6-sided noise shielding.",
+          "package_type": "Enclosed",
+          "features": ["2:1 input voltage range", "Up to 93% efficiency", "6-sided noise shielding", "OCP/short protection", "UVLO", "Adjustable output +-10%", "External ON/OFF", "2-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "KSP50",
+              "power_watts": 50,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_91b416f0_KSP50-110V.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=104510",
+              "input_voltage_ranges": ["DC 18~36V", "DC 36~75V", "DC 55~90V", "DC 65~150V"],
+              "output_options": [
+                {"voltage": "3.3V", "current": "11A"},
+                {"voltage": "5.0V", "current": "10A"},
+                {"voltage": "12.0V", "current": "4.2A"},
+                {"voltage": "15.0V", "current": "3.3A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "POL",
+      "name": "POL (Point of Load)",
+      "cate_prefix": "15",
+      "series": [
+        {
+          "series_name": "OPS5A Series",
+          "series_cate": "1510",
+          "description": "Non-isolated step-down DC-DC converters (POL). Adjustable output voltage 0.65V~5.5V. SIP package.",
+          "package_type": "SIP",
+          "features": ["Non-isolated step-down", "Adjustable output 0.65V~5.5V", "OCP/short protection", "-40 to +85C", "External ON/OFF", "Ceramic capacitors", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "OPS5A-5",
+              "power_watts_range": "3.25~18.15",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_d504b1bc_2943965522_cd04655f_OPS5A-05_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=151010",
+              "input_voltage_ranges": ["DC 3~5.5V"],
+              "output_options": [
+                {"voltage": "DC 0.65V~3.63V", "current": "5A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OPS5A-12",
+              "power_watts_range": "4~27.5",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_8989ff9c_OPS5A-05_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=151020",
+              "input_voltage_ranges": ["DC 8~14V"],
+              "output_options": [
+                {"voltage": "DC 0.8V~5.5V", "current": "5A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "OPS10A Series",
+          "series_cate": "1520",
+          "description": "Non-isolated step-down DC-DC converters providing low-voltage, high-current output as POL solutions. Adjustable output 0.65V~5.5V.",
+          "package_type": "SIP",
+          "features": ["Non-isolated step-down", "Adjustable output 0.65V~5.5V", "OCP/short protection", "-40 to +85C", "Ceramic capacitors", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "OPS10A-5",
+              "power_watts_range": "6.5~36.3",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_1c0e1afa_OPS10A-05_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=152010",
+              "input_voltage_ranges": ["DC 3.5~5.5V"],
+              "output_options": [
+                {"voltage": "DC 0.65V~3.63V", "current": "10A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OPS10A-12",
+              "power_watts_range": "8~55",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_7899b321_OPS10A-12_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=152020",
+              "input_voltage_ranges": ["DC 8~14V"],
+              "output_options": [
+                {"voltage": "DC 0.8V~5.5V", "current": "10A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "OPS15A Series",
+          "series_cate": "1530",
+          "description": "Non-isolated step-down DC-DC converters. Highest current POL option at 15A. Adjustable output, thermal protection.",
+          "package_type": "SIP",
+          "features": ["Non-isolated step-down", "Adjustable output 0.65V~5.5V", "OCP/short/thermal protection", "-40 to +85C", "Ceramic capacitors", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "OPS15A-5",
+              "power_watts_range": "9.75~54.45",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_2916a67f_OPS15A-05_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=153010",
+              "input_voltage_ranges": ["DC 3.5~5.5V"],
+              "output_options": [
+                {"voltage": "DC 0.65V~3.63V", "current": "15A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OPS15A-12",
+              "power_watts_range": "12~82.5",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_80e5f124_OPS15A-12_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=153020",
+              "input_voltage_ranges": ["DC 8~14V"],
+              "output_options": [
+                {"voltage": "DC 0.8V~5.5V", "current": "15A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACDC",
+      "name": "ACDC / SMPS",
+      "cate_prefix": "20",
+      "series": [
+        {
+          "series_name": "NOF Series",
+          "series_cate": "2005",
+          "description": "Compact, lightweight AC-DC converters. 75% smaller and 90% lighter than previous OFS Series. CB certified.",
+          "package_type": "Open Frame",
+          "features": ["Standby power <=0.3W", "High efficiency", "Compact size", "OCP/short protection", "Adjustable output +-10%", "Low ripple noise", "AC3000V isolation", "CB (IEC 60950-1)", "3-year warranty"],
+          "certifications": ["CB", "RoHS"],
+          "products": [
+            {
+              "model": "NOF5",
+              "power_watts": 5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_7c2c8561_NOF5.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200510",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "1.0A"},
+                {"voltage": "12V", "current": "0.42A"},
+                {"voltage": "15V", "current": "0.34A"},
+                {"voltage": "24V", "current": "0.21A"},
+                {"voltage": "48V", "current": "0.11A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOF10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_ea33ef40_NOF10.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200520",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.9A"},
+                {"voltage": "15V", "current": "0.7A"},
+                {"voltage": "24V", "current": "0.45A"},
+                {"voltage": "48V", "current": "0.22A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOF20",
+              "power_watts": 20,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_4d84c4f3_NOF20.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200530",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "4.0A"},
+                {"voltage": "12V", "current": "1.7A"},
+                {"voltage": "15V", "current": "1.4A"},
+                {"voltage": "24V", "current": "0.85A"},
+                {"voltage": "48V", "current": "0.42A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOF40",
+              "power_watts": 40,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_7d0ceb4c_NOF40.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200540",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "6.0A"},
+                {"voltage": "12V", "current": "3.4A"},
+                {"voltage": "15V", "current": "2.7A"},
+                {"voltage": "24V", "current": "1.7A"},
+                {"voltage": "48V", "current": "0.84A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOFD40",
+              "power_watts": 40,
+              "output_type": "Dual",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_1b6dfa3f_NOFD40.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200545",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "+5V/4A +12V/1.7A"},
+                {"voltage": "+5V/4A +15V/1.35A"},
+                {"voltage": "+5V/4A +24V/0.85A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "NOF60",
+              "power_watts": 60,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_4707900c_NOF60.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200550",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "5.0A"},
+                {"voltage": "15V", "current": "4.0A"},
+                {"voltage": "24V", "current": "2.5A"},
+                {"voltage": "48V", "current": "1.25A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOFD60",
+              "power_watts": 60,
+              "output_type": "Dual",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_e8ae6cdd_NOFD60.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200555",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "+5V/6A +12V/2.5A"},
+                {"voltage": "+5V/6A +15V/2A"},
+                {"voltage": "+5V/6A +24V/1.3A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "NOF75",
+              "power_watts": 75,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_e8901143_NOF75.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200560",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "6.25A"},
+                {"voltage": "15V", "current": "5.0A"},
+                {"voltage": "24V", "current": "3.15A"},
+                {"voltage": "48V", "current": "1.56A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOF100",
+              "power_watts": 100,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_0fdcd3d7_NOF100.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200570",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "8.4A"},
+                {"voltage": "15V", "current": "6.7A"},
+                {"voltage": "24V", "current": "4.2A"},
+                {"voltage": "48V", "current": "2.1A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "NOFD100",
+              "power_watts": 100,
+              "output_type": "Dual",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_f8cd56d7_NOFD10028EBA6ACEC8AA4ED8AB829.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200575",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "+5V/8A +12V/5A"},
+                {"voltage": "+5V/8A +15V/4A"},
+                {"voltage": "+5V/8A +24V/2.5A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "NOF150",
+              "power_watts": 150,
+              "image_url": null,
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=200580",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [],
+              "certifications": ["CB", "RoHS"],
+              "note": "Specs not listed on category page"
+            }
+          ]
+        },
+        {
+          "series_name": "OF Series",
+          "series_cate": "2010",
+          "description": "High-efficiency open-frame AC-DC converters. Standby power under 0.5W, compact size, 3000V isolation.",
+          "package_type": "Open Frame",
+          "features": ["Standby power <=0.5W", "High efficiency", "Compact", "OCP/short protection", "Adjustable output +-10%", "Low ripple noise", "AC3000V isolation", "2-year warranty"],
+          "certifications": ["CB", "RoHS"],
+          "products": [
+            {
+              "model": "OFS10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_df04ac5e_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201010",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.9A"},
+                {"voltage": "15V", "current": "0.7A"},
+                {"voltage": "24V", "current": "0.45A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS15",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_8457b389_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201020",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "3.0A"},
+                {"voltage": "12V", "current": "1.25A"},
+                {"voltage": "15V", "current": "1.0A"},
+                {"voltage": "24V", "current": "0.625A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS30",
+              "power_watts": 30,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_eafec0a0_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201030",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "5.0A"},
+                {"voltage": "12V", "current": "2.5A"},
+                {"voltage": "15V", "current": "2.0A"},
+                {"voltage": "24V", "current": "1.25A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS40",
+              "power_watts": 40,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_7654d11b_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201040",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "6.0A"},
+                {"voltage": "12V", "current": "3.4A"},
+                {"voltage": "15V", "current": "2.7A"},
+                {"voltage": "24V", "current": "1.7A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS50",
+              "power_watts": 50,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_3c4ba936_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201050",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "4.2A"},
+                {"voltage": "15V", "current": "3.4A"},
+                {"voltage": "24V", "current": "2.1A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS60",
+              "power_watts": 60,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_68fb14da_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201060",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "5.0A"},
+                {"voltage": "15V", "current": "4.0A"},
+                {"voltage": "24V", "current": "2.5A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS75",
+              "power_watts": 75,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_a13678b0_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201070",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "6.25A"},
+                {"voltage": "15V", "current": "5.0A"},
+                {"voltage": "24V", "current": "3.15A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFD75",
+              "power_watts": 75,
+              "output_type": "Dual",
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_aca8891d_OFD+EBA694EC9DB8.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201075",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "+5V/7A +12V/3A"},
+                {"voltage": "+5V/7A +24V/1.5A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS100F",
+              "power_watts": 100,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_8af8a5ef_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=2010a0",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "8.4A"},
+                {"voltage": "15V", "current": "6.7A"},
+                {"voltage": "24V", "current": "4.2A"},
+                {"voltage": "48V", "current": "2.1A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "OFS150F",
+              "power_watts": 150,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_e8954126_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=2010b0",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "12.5A"},
+                {"voltage": "15V", "current": "10.0A"},
+                {"voltage": "24V", "current": "6.25A"},
+                {"voltage": "48V", "current": "3.15A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "HNF Series",
+          "series_cate": "2012",
+          "description": "Budget-friendly open-frame AC-DC converters. 220V dedicated (AC 180-264V). 75% size/weight reduction vs NOF Series.",
+          "package_type": "Open Frame",
+          "features": ["220V dedicated input", "Standby power <=0.5W", "OCP/short protection", "Adjustable output +-10%", "AC3000V isolation", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "HNF20",
+              "power_watts": 20,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_64173882_HNF20.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201210",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "4A"},
+                {"voltage": "12V", "current": "1.7A"},
+                {"voltage": "15V", "current": "1.4A"},
+                {"voltage": "24V", "current": "0.85A"},
+                {"voltage": "48V", "current": "0.42A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HNF40",
+              "power_watts": 40,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_4eeb8907_HNF40.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201220",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "6A"},
+                {"voltage": "12V", "current": "3.4A"},
+                {"voltage": "15V", "current": "2.7A"},
+                {"voltage": "24V", "current": "1.7A"},
+                {"voltage": "48V", "current": "0.84A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HNF60",
+              "power_watts": 60,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_a1b66a4e_HNF60.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201230",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "5A"},
+                {"voltage": "15V", "current": "4A"},
+                {"voltage": "24V", "current": "2.5A"},
+                {"voltage": "48V", "current": "1.25A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HNF75",
+              "power_watts": 75,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_e777348c_HNF75.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201240",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "6.25A"},
+                {"voltage": "15V", "current": "5A"},
+                {"voltage": "24V", "current": "3.15A"},
+                {"voltage": "48V", "current": "1.56A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HNF100",
+              "power_watts": 100,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_58546ee4_HNF_100.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201250",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "8.4A"},
+                {"voltage": "15V", "current": "6.7A"},
+                {"voltage": "24V", "current": "4.2A"},
+                {"voltage": "48V", "current": "2.1A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "COF Series",
+          "series_cate": "2013",
+          "description": "Ultra-compact AC-DC converter with core PWM control, feedback, and transformer. External component configuration. 10-year warranty.",
+          "package_type": "Module",
+          "features": ["Ultra-compact", "Standby power <=0.3W or <=0.5W", "External component mounting", "AC3000V isolation", "10-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [],
+          "note": "No products currently registered in this category"
+        },
+        {
+          "series_name": "KMS Series (Medical)",
+          "series_cate": "2016",
+          "description": "Medical device grade AC-DC converters with 2MOPP (AC 4,500V isolation). Compact lightweight design.",
+          "package_type": "Open Frame",
+          "features": ["2MOPP (AC 4,500V isolation)", "Compact/lightweight", "Standby power <=0.3W", "OCP/short/OVP protection", "Medical grade"],
+          "certifications": ["CB", "CE(EMC)", "RoHS", "Medical"],
+          "products": [
+            {
+              "model": "KMS40",
+              "power_watts": 40,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_16986363_KMS40_REV_00.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201620",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "6.0A"},
+                {"voltage": "12V", "current": "3.4A"},
+                {"voltage": "15V", "current": "2.7A"},
+                {"voltage": "24V", "current": "1.7A"},
+                {"voltage": "48V", "current": "0.84A"}
+              ],
+              "certifications": ["RoHS", "Medical"]
+            },
+            {
+              "model": "KMS60",
+              "power_watts": 60,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_a7b0a54e_KMS60_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201630",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "5.0A"},
+                {"voltage": "15V", "current": "4.0A"},
+                {"voltage": "24V", "current": "2.5A"},
+                {"voltage": "48V", "current": "1.25A"}
+              ],
+              "certifications": ["CB", "CE(EMC)", "RoHS", "Medical"]
+            },
+            {
+              "model": "KMS75",
+              "power_watts": 75,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_29dc5d80_KMS75_REV_03.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201640",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "6.25A"},
+                {"voltage": "15V", "current": "5.0A"},
+                {"voltage": "24V", "current": "3.15A"},
+                {"voltage": "48V", "current": "1.56A"}
+              ],
+              "certifications": ["RoHS", "Medical"]
+            },
+            {
+              "model": "KMS100",
+              "power_watts": 100,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_b8cd1f14_KMS100_REV_02.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201650",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "8.4A"},
+                {"voltage": "15V", "current": "6.7A"},
+                {"voltage": "24V", "current": "4.2A"},
+                {"voltage": "48V", "current": "2.1A"}
+              ],
+              "certifications": ["RoHS", "Medical"]
+            }
+          ]
+        },
+        {
+          "series_name": "PF Series",
+          "series_cate": "2018",
+          "description": "High-efficiency AC-DC converters with LLC resonant circuit technology and power factor correction. Over 95% power factor, 86%+ efficiency.",
+          "package_type": "Open Frame",
+          "features": ["LLC resonant circuit", "Power factor correction (>95%)", "86%+ efficiency", "OCP/short/OVP protection", "Wide input range", "Integrated EMI filter", "3-year warranty"],
+          "certifications": ["CB", "RoHS"],
+          "products": [
+            {
+              "model": "PF75",
+              "power_watts": 75,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_96464c8f_pf75.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201810",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "6.3A"},
+                {"voltage": "15V", "current": "5.0A"},
+                {"voltage": "24V", "current": "3.15A"},
+                {"voltage": "48V", "current": "1.57A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "PF100",
+              "power_watts": 100,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_53eccb62_pf100.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201820",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "8.4A"},
+                {"voltage": "15V", "current": "6.7A"},
+                {"voltage": "24V", "current": "4.2A"},
+                {"voltage": "48V", "current": "2.1A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "PF150",
+              "power_watts": 150,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_b1e7a2af_pf150.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=201830",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "12.5A"},
+                {"voltage": "15V", "current": "10.0A"},
+                {"voltage": "24V", "current": "6.3A"},
+                {"voltage": "48V", "current": "3.2A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "TS Series",
+          "series_cate": "2020",
+          "description": "On-board type AC-DC converters. Standby power under 0.1W, 115kHz switching frequency. CB certified.",
+          "package_type": "On Board",
+          "features": ["Standby power <=0.1W", "115kHz switching", "OCP/short protection", "Wide input range", "Low ripple noise", "AC3000V isolation", "CB (IEC 60950-1)", "5-year warranty"],
+          "certifications": ["CB", "RoHS"],
+          "products": [
+            {
+              "model": "TS5",
+              "power_watts": 5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_2d692194_TS5_REV_03.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202010",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "1.0A"},
+                {"voltage": "12V", "current": "0.42A"},
+                {"voltage": "15V", "current": "0.34A"},
+                {"voltage": "24V", "current": "0.21A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "TS10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_e8edfa68_TS10_REV_03.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202020",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.84A"},
+                {"voltage": "15V", "current": "0.67A"},
+                {"voltage": "24V", "current": "0.42A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "TS Series (TB Type)",
+          "series_cate": "2022",
+          "description": "Terminal Block type version of TS Series. Same specs with TB mounting option.",
+          "package_type": "Terminal Block",
+          "features": ["Standby power <=0.1W", "115kHz switching", "OCP/short protection", "Wide input range", "AC3000V isolation", "CB (IEC 60950-1)", "5-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "TS5-TB",
+              "power_watts": 5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_02d2026e_TS5-TB_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202210",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "1.0A"},
+                {"voltage": "12V", "current": "0.42A"},
+                {"voltage": "15V", "current": "0.34A"},
+                {"voltage": "24V", "current": "0.21A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "TS10-TB",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_ee7d99c3_TS10-TB_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202220",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.84A"},
+                {"voltage": "15V", "current": "0.67A"},
+                {"voltage": "24V", "current": "0.42A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "LTS Series",
+          "series_cate": "2025",
+          "description": "Budget-oriented AC-DC converters. Reduced specs vs premium TS Series at significantly lower pricing.",
+          "package_type": "On Board",
+          "features": ["Budget model", "Wide input range", "OCP/short protection", "AC3000V isolation", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "LTS5",
+              "power_watts": 5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_bcf101fa_LTS5_REV_02.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202510",
+              "input_voltage": "AC 85~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "1.0A"},
+                {"voltage": "12V", "current": "0.42A"},
+                {"voltage": "15V", "current": "0.34A"},
+                {"voltage": "24V", "current": "0.21A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "LTS10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_6a67c400_LTS10_REV_02.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202520",
+              "input_voltage": "AC 85~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.84A"},
+                {"voltage": "15V", "current": "0.67A"},
+                {"voltage": "24V", "current": "0.42A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "LTS Series (TB Type)",
+          "series_cate": "2027",
+          "description": "Terminal Block type budget AC-DC converters. Low price, wide input range.",
+          "package_type": "Terminal Block",
+          "features": ["Budget/Low price", "Standby power <=0.3W", "OCP/short protection", "Wide input range", "AC3000V isolation", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "LTS5-TB",
+              "power_watts": 5,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_6e8bbdda_LTS5-TB_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202710",
+              "input_voltage": "AC 85~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "1.0A"},
+                {"voltage": "12V", "current": "0.42A"},
+                {"voltage": "15V", "current": "0.34A"},
+                {"voltage": "24V", "current": "0.21A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "LTS10-TB",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_2fc48f6c_LTS10-TB_REV_01.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=202720",
+              "input_voltage": "AC 85~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.84A"},
+                {"voltage": "15V", "current": "0.67A"},
+                {"voltage": "24V", "current": "0.42A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "HS Series",
+          "series_cate": "2030",
+          "description": "On-Board Type AC-DC converters. 100kHz switching, standby power under 0.3W. CB certified.",
+          "package_type": "On Board",
+          "features": ["Standby power <=0.3W", "100kHz switching", "OCP/short protection", "Wide input range", "Low ripple noise", "AC3000V isolation", "CB (IEC 60950-1)", "2-year warranty"],
+          "certifications": ["CB", "RoHS"],
+          "products": [
+            {
+              "model": "HS10",
+              "model_dual": "HSD10",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_f3ad436f_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203010",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.9A"},
+                {"voltage": "15V", "current": "0.7A"},
+                {"voltage": "24V", "current": "0.45A"},
+                {"voltage": "±12V", "current": "0.45A"},
+                {"voltage": "±15V", "current": "0.35A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HS15",
+              "model_dual": "HSD15",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2010082491_f557bb51_EB8C80ED919CEC9DB4EBAFB8ECA780-200.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203020",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "3.0A"},
+                {"voltage": "12V", "current": "1.3A"},
+                {"voltage": "15V", "current": "1.0A"},
+                {"voltage": "24V", "current": "0.65A"},
+                {"voltage": "±12V", "current": "0.65A"},
+                {"voltage": "±15V", "current": "0.5A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "HS30",
+              "power_watts": 30,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965682_fd3ebc39_HS30-1.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203030",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "6.0A"},
+                {"voltage": "12V", "current": "2.5A"},
+                {"voltage": "15V", "current": "2.0A"},
+                {"voltage": "24V", "current": "1.25A"},
+                {"voltage": "48V", "current": "0.63A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            },
+            {
+              "model": "HS60",
+              "power_watts": 60,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965682_a99b3048_HS60.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203040",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "10.0A"},
+                {"voltage": "12V", "current": "5.0A"},
+                {"voltage": "15V", "current": "4.0A"},
+                {"voltage": "24V", "current": "2.5A"},
+                {"voltage": "48V", "current": "1.25A"}
+              ],
+              "certifications": ["CB", "RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "HS Series (TB Type)",
+          "series_cate": "2035",
+          "description": "Terminal Block type version of HS Series. Same specs with TB mounting.",
+          "package_type": "Terminal Block",
+          "features": ["Standby power <=0.3W", "100kHz switching", "OCP/short protection", "Wide input range", "AC3000V isolation", "2-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "HS10-TB",
+              "model_dual": "HSD10-TB",
+              "power_watts": 10,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_dda2f62e_HS10-TB_REV_00.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203510",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "2.0A"},
+                {"voltage": "12V", "current": "0.9A"},
+                {"voltage": "15V", "current": "0.7A"},
+                {"voltage": "24V", "current": "0.45A"},
+                {"voltage": "±12V", "current": "0.45A"},
+                {"voltage": "±15V", "current": "0.35A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HS15-TB",
+              "model_dual": "HSD15-TB",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_0ec1b473_HS15-TB_REV_00.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203520",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "3.0A"},
+                {"voltage": "12V", "current": "1.3A"},
+                {"voltage": "15V", "current": "1.0A"},
+                {"voltage": "24V", "current": "0.65A"},
+                {"voltage": "±12V", "current": "0.65A"},
+                {"voltage": "±15V", "current": "0.5A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HS30-TB",
+              "power_watts": 30,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_cc301112_HS30-TB_REV_00.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203530",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "6.0A"},
+                {"voltage": "12V", "current": "2.5A"},
+                {"voltage": "15V", "current": "2.0A"},
+                {"voltage": "24V", "current": "1.25A"},
+                {"voltage": "48V", "current": "0.63A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "HS60-TB",
+              "power_watts": 60,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/2943965522_8f637bb6_HS60-TB_REV_00.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203540",
+              "input_voltage": "AC 90~264V or DC 120~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "10.0A"},
+                {"voltage": "12V", "current": "5.0A"},
+                {"voltage": "15V", "current": "4.0A"},
+                {"voltage": "24V", "current": "2.5A"},
+                {"voltage": "48V", "current": "1.25A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "EHS Series",
+          "series_cate": "2038",
+          "description": "Budget ultra-compact on-board AC-DC converters. 220V dedicated input (AC 180-264V). Standby power under 0.3W.",
+          "package_type": "On Board",
+          "features": ["220V dedicated", "Standby power <=0.3W", "Ultra-compact", "OCP/short protection", "AC3000V isolation", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "EHS15",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_1195f3bf_EHS15.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203810",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "3.0A"},
+                {"voltage": "12V", "current": "1.3A"},
+                {"voltage": "15V", "current": "1.3A"},
+                {"voltage": "24V", "current": "0.65A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "EHS25",
+              "power_watts": 25,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_587d585f_EHS25-1.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203820",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "4.5A"},
+                {"voltage": "12V", "current": "2.1A"},
+                {"voltage": "15V", "current": "1.7A"},
+                {"voltage": "24V", "current": "1.05A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "EHS50",
+              "power_watts": 50,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_a994c6e2_EHS50-1.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203830",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "4.2A"},
+                {"voltage": "15V", "current": "3.4A"},
+                {"voltage": "24V", "current": "2.1A"},
+                {"voltage": "48V", "current": "1.05A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        },
+        {
+          "series_name": "EHS Series (TB Type)",
+          "series_cate": "2039",
+          "description": "Budget Terminal Block type AC-DC converters. 220V dedicated. 75% size reduction, 70% weight reduction vs HS TB Series.",
+          "package_type": "Terminal Block",
+          "features": ["220V dedicated", "Budget model", "Standby power <=0.3W", "OCP/short protection", "Ultra-compact", "AC3000V isolation", "3-year warranty"],
+          "certifications": ["RoHS"],
+          "products": [
+            {
+              "model": "EHS15-TB",
+              "power_watts": 15,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_ad0d7f81_EHS15-TB_REV_00.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203910",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "3.0A"},
+                {"voltage": "12V", "current": "1.3A"},
+                {"voltage": "15V", "current": "1.3A"},
+                {"voltage": "24V", "current": "0.65A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "EHS25-TB",
+              "power_watts": 25,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_780a56cc_EHS25-TB-1.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203920",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "5V", "current": "4.5A"},
+                {"voltage": "12V", "current": "2.1A"},
+                {"voltage": "15V", "current": "1.7A"},
+                {"voltage": "24V", "current": "1.05A"}
+              ],
+              "certifications": ["RoHS"]
+            },
+            {
+              "model": "EHS50-TB",
+              "power_watts": 50,
+              "image_url": "https://www.odpcorp.co.kr/index/data/item/32586291_37842f02_EHS50-TB-1.jpg",
+              "detail_url": "https://www.odpcorp.co.kr/index/s2/s2_list.php?cate=203930",
+              "input_voltage": "AC 180~264V or DC 250~370V",
+              "output_options": [
+                {"voltage": "12V", "current": "4.2A"},
+                {"voltage": "15V", "current": "3.4A"},
+                {"voltage": "24V", "current": "2.1A"},
+                {"voltage": "48V", "current": "1.05A"}
+              ],
+              "certifications": ["RoHS"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_categories": 3,
+    "total_series": 19,
+    "total_products": 95,
+    "category_breakdown": {
+      "DCDC": {
+        "series_count": 6,
+        "product_count": 23,
+        "series_list": ["SD Series (5)", "VDS Series (4)", "D Series (7)", "DH Series (4)", "WD Series (2)", "KSP Series (1)"]
+      },
+      "POL": {
+        "series_count": 3,
+        "product_count": 6,
+        "series_list": ["OPS5A Series (2)", "OPS10A Series (2)", "OPS15A Series (2)"]
+      },
+      "ACDC": {
+        "series_count": 10,
+        "product_count": 66,
+        "series_list": ["NOF Series (11)", "OF Series (10)", "HNF Series (5)", "COF Series (0)", "KMS Series (4)", "PF Series (3)", "TS Series (2)", "TS TB Series (2)", "LTS Series (2)", "LTS TB Series (2)", "HS Series (4)", "HS TB Series (4)", "EHS Series (3)", "EHS TB Series (3)"]
+      }
+    }
+  }
+}

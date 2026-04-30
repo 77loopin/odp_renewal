@@ -28,7 +28,7 @@ function StatsPageInner() {
         <Link href="/quality" className="text-sm text-slate-500 hover:text-slate-700">← 목록으로</Link>
       </div>
       <div className="flex gap-1 border-b border-slate-200 mb-6">
-        <TabBtn active={tab === "causes"} onClick={() => setTabAndPush("causes")} highlight>원인 랭킹</TabBtn>
+        <TabBtn active={tab === "causes"} onClick={() => setTabAndPush("causes")}>부적합 대시보드</TabBtn>
         <TabBtn active={tab === "model"} onClick={() => setTabAndPush("model")}>모델 대시보드</TabBtn>
         <TabBtn active={tab === "global"} onClick={() => setTabAndPush("global")}>전사 대시보드</TabBtn>
       </div>

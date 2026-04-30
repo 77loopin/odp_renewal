@@ -27,7 +27,13 @@ export default function CauseRanking({ title, rows, hrefBuilder, initialLimit }:
       ) : (
         <>
           <ol
-            className={`divide-y divide-slate-100 ${expanded ? "max-h-[420px] overflow-y-auto" : ""}`}
+            className={`divide-y divide-slate-100 ${expanded ? "overflow-y-auto" : ""}`}
+            style={
+              expanded
+                // 펼친 영역 높이는 collapsed 상태(initialLimit 행)의 약 1.5배. 그 이상은 내부 스크롤.
+                ? { maxHeight: `${Math.max(420, (initialLimit ?? 10) * 56 * 1.5)}px` }
+                : undefined
+            }
           >
             {visible.map((r, i) => {
               const w = max > 0 ? Math.round((r.percent / max) * 100) : 0;

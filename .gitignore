@@ -7,3 +7,4 @@ data/quality.db
 data/quality.db-journal
 data/quality.db-wal
 data/quality.db-shm
+tsconfig.tsbuildinfo

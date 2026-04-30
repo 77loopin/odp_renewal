@@ -7,6 +7,7 @@ import Container from "@/components/ui/Container";
 const NAV_ITEMS = [
   { label: "홈", href: "/" },
   { label: "제품", href: "/products" },
+  { label: "품질관리", href: "/quality" },
   { label: "회사소개", href: "/about" },
 ];
 

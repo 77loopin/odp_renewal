@@ -26,38 +26,41 @@ export default function CauseRanking({ title, rows, hrefBuilder, initialLimit }:
         <div className="px-4 py-12 text-center text-slate-500 text-sm">데이터 없음</div>
       ) : (
         <>
-          <ol
-            className={`divide-y divide-slate-100 ${expanded ? "overflow-y-auto" : ""}`}
+          <div
+            className={`overflow-x-auto ${expanded ? "overflow-y-auto" : ""}`}
             style={
               expanded
-                // 펼친 영역 높이는 collapsed 상태(initialLimit 행)의 약 1.5배. 그 이상은 내부 스크롤.
+                // 펼친 영역 높이는 collapsed 상태(initialLimit 행)의 약 1.5배. 그 이상은 내부 세로 스크롤.
                 ? { maxHeight: `${Math.max(420, (initialLimit ?? 10) * 56 * 1.5)}px` }
                 : undefined
             }
           >
-            {visible.map((r, i) => {
-              const w = max > 0 ? Math.round((r.percent / max) * 100) : 0;
-              const content = (
-                // 반응형:
-                //   - 모바일(default): 순위 + 항목 + 건수 + %
-                //   - md 이상       : + 게이지 바
-                <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-3">
-                  <span className="w-6 shrink-0 text-right text-slate-400 text-sm">{i + 1}</span>
-                  <span className="flex-1 min-w-0 font-medium truncate">{r.key}</span>
-                  <span className="w-14 shrink-0 text-right text-sm tabular-nums">{r.count}건</span>
-                  <span className="w-12 shrink-0 text-right text-sm tabular-nums text-slate-500">{r.percent}%</span>
-                  <div className="hidden md:block w-20 shrink-0 h-2 bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-accent-blue" style={{ width: `${w}%` }} />
+            <ol className="divide-y divide-slate-100">
+              {visible.map((r, i) => {
+                const w = max > 0 ? Math.round((r.percent / max) * 100) : 0;
+                const content = (
+                  // 반응형:
+                  //   - 모바일(default): 순위 + 항목 + 건수 + %
+                  //   - md 이상       : + 게이지 바
+                  // 항목명이 너무 길면 truncate 대신 가로 스크롤(부모 div).
+                  <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-3">
+                    <span className="w-6 shrink-0 text-right text-slate-400 text-sm">{i + 1}</span>
+                    <span className="flex-1 font-medium whitespace-nowrap">{r.key}</span>
+                    <span className="w-14 shrink-0 text-right text-sm tabular-nums">{r.count}건</span>
+                    <span className="w-12 shrink-0 text-right text-sm tabular-nums text-slate-500">{r.percent}%</span>
+                    <div className="hidden md:block w-20 shrink-0 h-2 bg-slate-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-accent-blue" style={{ width: `${w}%` }} />
+                    </div>
                   </div>
-                </div>
-              );
-              return (
-                <li key={r.key} className="hover:bg-slate-50">
-                  {hrefBuilder ? <Link href={hrefBuilder(r.key)}>{content}</Link> : content}
-                </li>
-              );
-            })}
-          </ol>
+                );
+                return (
+                  <li key={r.key} className="hover:bg-slate-50">
+                    {hrefBuilder ? <Link href={hrefBuilder(r.key)}>{content}</Link> : content}
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
           {hasMore && (
             <button
               onClick={() => setExpanded((v) => !v)}

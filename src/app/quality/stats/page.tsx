@@ -17,8 +17,10 @@ function StatsPageInner() {
   const tab: Tab = (sp.get("tab") as Tab) || "model";
 
   function setTabAndPush(t: Tab) {
-    const q = new URLSearchParams(sp.toString()); q.set("tab", t);
-    router.replace(`/quality/stats?${q.toString()}`);
+    // 탭 버튼 클릭은 깨끗한 슬레이트 (다른 탭의 model/defect 누수 방지).
+    // 탭 간 deep-link 이동(예: 모델 대시보드의 부적합 항목 클릭)은 별도 Link 가
+    //   필요한 파라미터를 명시적으로 채워서 이동하므로 영향 없음.
+    router.replace(`/quality/stats?tab=${t}`);
   }
 
   return (

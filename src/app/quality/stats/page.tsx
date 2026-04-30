@@ -28,9 +28,9 @@ function StatsPageInner() {
         <Link href="/quality" className="text-sm text-slate-500 hover:text-slate-700">← 목록으로</Link>
       </div>
       <div className="flex gap-1 border-b border-slate-200 mb-6">
-        <TabBtn active={tab === "causes"} onClick={() => setTabAndPush("causes")}>부적합 대시보드</TabBtn>
-        <TabBtn active={tab === "model"} onClick={() => setTabAndPush("model")}>모델 대시보드</TabBtn>
-        <TabBtn active={tab === "global"} onClick={() => setTabAndPush("global")}>전사 대시보드</TabBtn>
+        <TabBtn active={tab === "model"} onClick={() => setTabAndPush("model")}>모델 통계</TabBtn>
+        <TabBtn active={tab === "causes"} onClick={() => setTabAndPush("causes")}>부적합 통계</TabBtn>
+        <TabBtn active={tab === "global"} onClick={() => setTabAndPush("global")}>전사 통계</TabBtn>
       </div>
       {tab === "causes" && <CausesTab />}
       {tab === "model" && <ModelTab />}
@@ -184,12 +184,12 @@ function CausesTab() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <CauseRanking title="부적합 원인 TOP 5" rows={d.topCauses} hrefBuilder={causeHref} />
-            <CauseRanking title="조치사항 TOP 5" rows={d.topActions} />
+            <CauseRanking title="부적합 원인 TOP 5" rows={d.topCauses} initialLimit={5} hrefBuilder={causeHref} />
+            <CauseRanking title="조치사항 TOP 5" rows={d.topActions} initialLimit={5} />
           </div>
 
           {!d.model && (
-            <CauseRanking title="발생 모델 TOP 10" rows={d.topModels} hrefBuilder={modelHref} />
+            <CauseRanking title="발생 모델 TOP 10" rows={d.topModels} initialLimit={10} hrefBuilder={modelHref} />
           )}
 
           <div className="bg-white border border-slate-200 rounded-xl">
@@ -282,11 +282,13 @@ function ModelTab() {
             <CauseRanking
               title="부적합 내용 TOP 5"
               rows={d.topDefects}
+              initialLimit={5}
               hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}&model=${encodeURIComponent(model)}`}
             />
             <CauseRanking
               title="부적합 원인 TOP 5"
               rows={d.topCauses}
+              initialLimit={5}
               hrefBuilder={(cause) => `/quality?model=${encodeURIComponent(model)}&cause=${encodeURIComponent(cause)}`}
             />
           </div>
@@ -338,18 +340,20 @@ function GlobalTab() {
         <Card label="모델 수" value={d.modelCount.toLocaleString()} />
         <Card label="처리자 수" value={d.handlerCount.toLocaleString()} />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <CauseRanking
-          title="부적합 많은 모델 TOP 10"
-          rows={d.topModels}
-          hrefBuilder={(m) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`}
-        />
+      <CauseRanking
+        title="부적합 많은 모델 TOP 10"
+        rows={d.topModels}
+        initialLimit={10}
+        hrefBuilder={(m) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`}
+      />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <CauseRanking
           title="부적합 내용 TOP 10"
           rows={d.topDefects}
+          initialLimit={10}
           hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}`}
         />
-        <CauseRanking title="부적합 원인 TOP 10" rows={d.topCauses} />
+        <CauseRanking title="부적합 원인 TOP 10" rows={d.topCauses} initialLimit={10} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="bg-white border border-slate-200 rounded-xl p-4 lg:col-span-2">

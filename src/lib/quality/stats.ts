@@ -104,19 +104,19 @@ export function getDefectDashboard(
 
   const topModelsRows = db.prepare(
     `SELECT model_name v, COUNT(*) c FROM non_conformance ${whereSql}
-     GROUP BY model_name ORDER BY c DESC LIMIT 10`,
+     GROUP BY model_name ORDER BY c DESC LIMIT 50`,
   ).all(...params) as { v: string; c: number }[];
 
   const topCausesRows = db.prepare(
     `SELECT cause v, COUNT(*) c FROM non_conformance ${whereSql}
      AND cause IS NOT NULL AND cause != ''
-     GROUP BY cause ORDER BY c DESC LIMIT 5`,
+     GROUP BY cause ORDER BY c DESC LIMIT 50`,
   ).all(...params) as { v: string; c: number }[];
 
   const topActionsRows = db.prepare(
     `SELECT action v, COUNT(*) c FROM non_conformance ${whereSql}
      AND action IS NOT NULL AND action != ''
-     GROUP BY action ORDER BY c DESC LIMIT 5`,
+     GROUP BY action ORDER BY c DESC LIMIT 50`,
   ).all(...params) as { v: string; c: number }[];
 
   const recentRows = db.prepare(
@@ -175,13 +175,13 @@ export function getModelDashboard(
 
   const topDefectsRows = db.prepare(
     `SELECT defect v, COUNT(*) c FROM non_conformance WHERE model_name = ?
-     GROUP BY defect ORDER BY c DESC LIMIT 5`,
+     GROUP BY defect ORDER BY c DESC LIMIT 50`,
   ).all(model) as { v: string; c: number }[];
 
   const topCausesRows = db.prepare(
     `SELECT cause v, COUNT(*) c FROM non_conformance
      WHERE model_name = ? AND cause IS NOT NULL AND cause != ''
-     GROUP BY cause ORDER BY c DESC LIMIT 5`,
+     GROUP BY cause ORDER BY c DESC LIMIT 50`,
   ).all(model) as { v: string; c: number }[];
 
   const recentRows = db.prepare(
@@ -225,17 +225,17 @@ export function getGlobalDashboard(db: Database.Database = getDb()): GlobalDashb
   ).get() as { c: number }).c;
 
   const topModelsRows = db.prepare(
-    `SELECT model_name v, COUNT(*) c FROM non_conformance GROUP BY model_name ORDER BY c DESC LIMIT 10`,
+    `SELECT model_name v, COUNT(*) c FROM non_conformance GROUP BY model_name ORDER BY c DESC LIMIT 50`,
   ).all() as { v: string; c: number }[];
 
   const topDefectsRows = db.prepare(
     `SELECT defect v, COUNT(*) c FROM non_conformance
-     WHERE defect IS NOT NULL AND defect != '' GROUP BY defect ORDER BY c DESC LIMIT 10`,
+     WHERE defect IS NOT NULL AND defect != '' GROUP BY defect ORDER BY c DESC LIMIT 50`,
   ).all() as { v: string; c: number }[];
 
   const topCausesRows = db.prepare(
     `SELECT cause v, COUNT(*) c FROM non_conformance
-     WHERE cause IS NOT NULL AND cause != '' GROUP BY cause ORDER BY c DESC LIMIT 10`,
+     WHERE cause IS NOT NULL AND cause != '' GROUP BY cause ORDER BY c DESC LIMIT 50`,
   ).all() as { v: string; c: number }[];
 
   const monthly = (db.prepare(

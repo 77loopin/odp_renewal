@@ -82,20 +82,28 @@ function MonthlyChart({ data }: { data: { month: string; count: number }[] }) {
   );
 }
 
-interface CausesData {
+interface DefectData {
+  defect: string;
+  model: string | null;
   total: number;
+  recent30: number;
+  modelCount: number;
+  topModel: string | null;
   range: { from: string | null; to: string | null };
-  causes: { key: string; count: number; percent: number }[];
-  actions: { key: string; count: number; percent: number }[];
+  monthly: { month: string; count: number }[];
+  topModels: { key: string; count: number; percent: number }[];
+  topCauses: { key: string; count: number; percent: number }[];
+  topActions: { key: string; count: number; percent: number }[];
+  recentRows: { nc_no: string; written_date: string; model_name: string; cause: string | null; action: string | null }[];
 }
 
 function CausesTab() {
   const sp = useSearchParams();
   const router = useRouter();
-  const [model, setModel] = useState(sp.get("model") ?? "");
   const [defect, setDefect] = useState(sp.get("defect") ?? "");
+  const [model, setModel] = useState(sp.get("model") ?? "");
   const [opts, setOpts] = useState({ models: [] as string[], defects: [] as string[] });
-  const [data, setData] = useState<CausesData | null>(null);
+  const [d, setD] = useState<DefectData | null>(null);
 
   useEffect(() => {
     const url = `/api/quality/options${model ? `?model=${encodeURIComponent(model)}` : ""}`;
@@ -103,54 +111,116 @@ function CausesTab() {
   }, [model]);
 
   function search() {
-    const queryUrl = new URLSearchParams();
-    if (model) queryUrl.set("model", model);
-    if (defect) queryUrl.set("defect", defect);
-    fetch(`/api/quality/stats/causes?${queryUrl.toString()}`).then((r) => r.json()).then(setData);
-    const q = new URLSearchParams({ tab: "causes" });
+    if (!defect) { setD(null); return; }
+    const q = new URLSearchParams();
+    q.set("defect", defect);
     if (model) q.set("model", model);
-    if (defect) q.set("defect", defect);
-    router.replace(`/quality/stats?${q.toString()}`);
+    fetch(`/api/quality/stats/defect?${q.toString()}`).then((r) => r.json()).then(setD);
+    const url = new URLSearchParams({ tab: "causes", defect });
+    if (model) url.set("model", model);
+    router.replace(`/quality/stats?${url.toString()}`);
   }
 
+  // URL 진입 시 자동 조회
   useEffect(() => {
-    if (sp.get("model") || sp.get("defect")) search();
+    if (sp.get("defect")) search();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const hrefBuilder = (cause: string) => {
-    const q = new URLSearchParams();
+  const recentModels = useCatalogLookup(d?.recentRows.map((r) => r.model_name) ?? []);
+  const focusedModelMeta = useCatalogLookup(model ? [model] : []);
+
+  const causeHref = (cause: string) => {
+    const q = new URLSearchParams({ defect });
     if (model) q.set("model", model);
-    if (defect) q.set("defect", defect);
     q.set("cause", cause);
     return `/quality?${q.toString()}`;
   };
+  const modelHref = (m: string) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`;
 
   return (
     <div className="space-y-6">
-      <div className="bg-white border border-slate-200 rounded-xl p-4 grid grid-cols-1 md:grid-cols-3 gap-3 items-end">
+      <div className="bg-white border border-slate-200 rounded-xl p-4 grid grid-cols-1 md:grid-cols-[2fr_2fr_auto] gap-3 items-end">
         <div className="space-y-1">
-          <label className="text-sm font-medium block">모델명</label>
-          <Combobox value={model} onChange={setModel} options={opts.models} placeholder="예: SDS6-24-12" />
-        </div>
-        <div className="space-y-1">
-          <label className="text-sm font-medium block">부적합 내용</label>
+          <label className="text-sm font-medium block">부적합 내용 *</label>
           <Combobox value={defect} onChange={setDefect} options={opts.defects} placeholder="예: 입력쇼트" />
         </div>
-        <button onClick={search} className="px-5 py-2 text-sm rounded-lg bg-navy text-white">조회</button>
-      </div>
-      {data && (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-3">
-            <div><div className="text-xs text-slate-500">총 건수</div><div className="text-3xl font-bold">{data.total.toLocaleString()}</div></div>
-            <div><div className="text-xs text-slate-500">기간</div><div className="text-sm">{data.range.from ?? "-"} ~ {data.range.to ?? "-"}</div></div>
-            <div><div className="text-xs text-slate-500">고유 원인 수</div><div className="text-2xl font-semibold">{data.causes.length}</div></div>
-          </div>
-          <div className="lg:col-span-2 space-y-4">
-            <CauseRanking title="부적합 원인 랭킹" rows={data.causes} hrefBuilder={hrefBuilder} />
-            <CauseRanking title="조치사항 랭킹" rows={data.actions} />
-          </div>
+        <div className="space-y-1">
+          <label className="text-sm font-medium block">모델명 (선택)</label>
+          <Combobox value={model} onChange={setModel} options={opts.models} placeholder="비워두면 전사" />
         </div>
+        <button onClick={search} disabled={!defect} className="px-5 py-2 text-sm rounded-lg bg-navy text-white disabled:opacity-50">조회</button>
+      </div>
+
+      {d && (
+        <>
+          <div className="flex flex-wrap items-center gap-2 text-sm">
+            <span className="px-2 py-1 rounded-md bg-slate-100 font-medium">{d.defect}</span>
+            {d.model ? (
+              <>
+                <span className="text-slate-400">∩</span>
+                <span className="px-2 py-1 rounded-md bg-slate-100 font-medium font-mono">{d.model}</span>
+                {focusedModelMeta[d.model] && (
+                  <Link href={`/products/detail/${focusedModelMeta[d.model].series_model}`}
+                        className="text-accent-blue hover:underline">제품 상세 →</Link>
+                )}
+              </>
+            ) : (
+              <span className="text-xs text-slate-500">전사 횡단 (모든 모델)</span>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            <Card label="총 건수" value={d.total.toLocaleString()} />
+            <Card label="최근 30일" value={d.recent30.toLocaleString()} />
+            <Card label={d.model ? "최다 원인" : "발생 모델 수"}
+                  value={d.model ? (d.topCauses[0]?.key ?? "-") : d.modelCount.toLocaleString()} />
+            <Card label="최다 모델" value={d.topModel ?? "-"} />
+          </div>
+
+          <div className="bg-white border border-slate-200 rounded-xl p-4">
+            <div className="font-semibold mb-2">월별 추이 (최근 12개월)</div>
+            <MonthlyChart data={d.monthly} />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <CauseRanking title="부적합 원인 TOP 5" rows={d.topCauses} hrefBuilder={causeHref} />
+            <CauseRanking title="조치사항 TOP 5" rows={d.topActions} />
+          </div>
+
+          {!d.model && (
+            <CauseRanking title="발생 모델 TOP 10" rows={d.topModels} hrefBuilder={modelHref} />
+          )}
+
+          <div className="bg-white border border-slate-200 rounded-xl">
+            <div className="px-4 py-3 border-b border-slate-100 font-semibold">최근 이력 10건</div>
+            <table className="w-full text-sm">
+              <thead className="bg-slate-50 text-slate-600"><tr>
+                <th className="px-3 py-2 text-left">NC</th>
+                <th className="px-3 py-2 text-left">일자</th>
+                <th className="px-3 py-2 text-left">모델명</th>
+                <th className="px-3 py-2 text-left">원인</th>
+                <th className="px-3 py-2 text-left">조치</th>
+              </tr></thead>
+              <tbody>{d.recentRows.map((r) => (
+                <tr key={r.nc_no} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-mono">
+                    <Link className="text-accent-blue hover:underline" href={`/quality/${r.nc_no}`}>{r.nc_no}</Link>
+                  </td>
+                  <td className="px-3 py-2 whitespace-nowrap">{r.written_date}</td>
+                  <td className="px-3 py-2">
+                    {recentModels[r.model_name] ? (
+                      <Link href={`/products/detail/${recentModels[r.model_name].series_model}`}
+                            className="text-accent-blue hover:underline">{r.model_name}</Link>
+                    ) : r.model_name}
+                  </td>
+                  <td className="px-3 py-2">{r.cause ?? "-"}</td>
+                  <td className="px-3 py-2">{r.action ?? "-"}</td>
+                </tr>
+              ))}</tbody>
+            </table>
+          </div>
+        </>
       )}
     </div>
   );

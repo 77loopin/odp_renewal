@@ -189,7 +189,7 @@ export interface OptionSet {
 }
 
 export function getOptions(
-  scope: { model?: string } = {},
+  scope: { model?: string; modelSort?: "alpha" | "frequency" } = {},
   db: Database.Database = getDb(),
 ): OptionSet {
   const params = scope.model ? [scope.model] : [];
@@ -202,6 +202,16 @@ export function getOptions(
   let models: string[];
   if (scope.model) {
     models = [scope.model];
+  } else if (scope.modelSort === "frequency") {
+    // 부적합 많은 순 → 부적합 0건인 catalog part_number는 알파벳 순으로 뒤에 붙임
+    const ranked = (db.prepare(
+      `SELECT model_name as v, COUNT(*) as c FROM non_conformance GROUP BY model_name ORDER BY c DESC, v ASC`,
+    ).all() as { v: string; c: number }[]).map((r) => r.v);
+    const seen = new Set(ranked);
+    const catalogTail = (db.prepare(
+      `SELECT part_number as v FROM catalog_product ORDER BY part_number ASC`,
+    ).all() as { v: string }[]).map((r) => r.v).filter((v) => !seen.has(v));
+    models = [...ranked, ...catalogTail];
   } else {
     // 부적합 이력 모델명 ∪ 카탈로그 part_number  (정렬·중복제거)
     const historic = (db.prepare(`SELECT DISTINCT model_name as v FROM non_conformance`).all() as { v: string }[]).map((r) => r.v);

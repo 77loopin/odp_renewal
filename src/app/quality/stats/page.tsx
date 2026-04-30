@@ -109,7 +109,9 @@ function CausesTab() {
   const [d, setD] = useState<DefectData | null>(null);
 
   useEffect(() => {
-    const url = `/api/quality/options${model ? `?model=${encodeURIComponent(model)}` : ""}`;
+    const url = model
+      ? `/api/quality/options?model=${encodeURIComponent(model)}&modelSort=frequency`
+      : `/api/quality/options?modelSort=frequency`;
     fetch(url).then((r) => r.json()).then((o) => setOpts({ models: o.models, defects: o.defects }));
   }, [model]);
 
@@ -249,7 +251,7 @@ function ModelTab() {
   const [opts, setOpts] = useState<string[]>([]);
   const [d, setD] = useState<ModelData | null>(null);
 
-  useEffect(() => { fetch("/api/quality/options").then((r) => r.json()).then((o) => setOpts(o.models)); }, []);
+  useEffect(() => { fetch("/api/quality/options?modelSort=frequency").then((r) => r.json()).then((o) => setOpts(o.models)); }, []);
 
   function search() {
     if (!model) { setD(null); setAppliedModel(""); return; }

@@ -2,3 +2,8 @@
 node_modules
 .claude
 .idea
+.env.local
+data/quality.db
+data/quality.db-journal
+data/quality.db-wal
+data/quality.db-shm

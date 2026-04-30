@@ -279,8 +279,16 @@ function ModelTab() {
             <MonthlyChart data={d.monthly} />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <CauseRanking title="부적합 내용 TOP 5" rows={d.topDefects} />
-            <CauseRanking title="부적합 원인 TOP 5" rows={d.topCauses} />
+            <CauseRanking
+              title="부적합 내용 TOP 5"
+              rows={d.topDefects}
+              hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}&model=${encodeURIComponent(model)}`}
+            />
+            <CauseRanking
+              title="부적합 원인 TOP 5"
+              rows={d.topCauses}
+              hrefBuilder={(cause) => `/quality?model=${encodeURIComponent(model)}&cause=${encodeURIComponent(cause)}`}
+            />
           </div>
           <div className="bg-white border border-slate-200 rounded-xl">
             <div className="px-4 py-3 border-b border-slate-100 font-semibold">최근 이력 10건</div>

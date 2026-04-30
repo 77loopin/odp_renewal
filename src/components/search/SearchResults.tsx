@@ -2,11 +2,11 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { getSearchEngine } from "@/lib/search";
 import { formatPower, getInputVoltage } from "@/types/product";
 import { CertBadges } from "@/components/ui/Badge";
 import { CATEGORY_COLORS } from "@/lib/catalog";
+import ProductImage from "@/components/product/ProductImage";
 
 interface SearchResultsProps {
   query: string;
@@ -63,13 +63,12 @@ export default function SearchResults({ query }: SearchResultsProps) {
           return (
             <Link key={product.model} href={`/products/detail/${product.model}`}>
               <div className="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:shadow-md hover:border-slate-300 transition-all">
-                <Image
+                <ProductImage
                   src={product.image_url}
                   alt={product.model}
                   width={64}
                   height={64}
                   className="object-contain rounded flex-shrink-0"
-                  unoptimized
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 mb-1">

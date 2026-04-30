@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Product } from "@/types/product";
 import { formatPower, getInputVoltage } from "@/types/product";
 import { CertBadges } from "@/components/ui/Badge";
+import ProductImage from "@/components/product/ProductImage";
 
 interface ProductTableProps {
   products: Product[];
@@ -33,13 +33,12 @@ export default function ProductTable({ products, categoryId }: ProductTableProps
               <tr key={p.model} className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
                 <td className="py-3 px-4">
                   <Link href={`/products/detail/${p.model}`}>
-                    <Image
+                    <ProductImage
                       src={p.image_url}
                       alt={p.model}
                       width={64}
                       height={64}
                       className="object-contain rounded"
-                      unoptimized
                     />
                   </Link>
                 </td>
@@ -93,13 +92,12 @@ export default function ProductTable({ products, categoryId }: ProductTableProps
           <Link key={p.model} href={`/products/detail/${p.model}`}>
             <div className="border border-slate-200 rounded-xl p-4 hover:shadow-sm transition-shadow">
               <div className="flex items-start gap-3">
-                <Image
+                <ProductImage
                   src={p.image_url}
                   alt={p.model}
                   width={56}
                   height={56}
                   className="object-contain rounded flex-shrink-0"
-                  unoptimized
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">

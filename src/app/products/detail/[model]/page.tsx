@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import OutputTable from "@/components/product/OutputTable";
+import ProductImage from "@/components/product/ProductImage";
 import { CertBadges } from "@/components/ui/Badge";
 import { getProductByModel, getAllModels, CATEGORY_COLORS } from "@/lib/catalog";
 import { formatPower, getInputVoltage } from "@/types/product";
@@ -48,13 +48,12 @@ export default function ProductDetailPage({ params }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         {/* Image */}
         <div className="bg-slate-50 rounded-2xl p-8 flex items-center justify-center">
-          <Image
+          <ProductImage
             src={product.image_url}
             alt={product.model}
             width={320}
             height={320}
             className="object-contain"
-            unoptimized
           />
         </div>
 

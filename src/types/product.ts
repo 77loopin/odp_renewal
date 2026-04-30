@@ -12,7 +12,7 @@ export interface PartDetail {
 export interface BaseProduct {
   model: string;
   model_dual?: string;
-  image_url: string;
+  image_url: string | null;
   detail_url: string;
   output_options: OutputOption[];
   certifications: string[];

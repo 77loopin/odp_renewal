@@ -28,9 +28,9 @@ function StatsPageInner() {
         <Link href="/quality" className="text-sm text-slate-500 hover:text-slate-700">← 목록으로</Link>
       </div>
       <div className="flex gap-1 border-b border-slate-200 mb-6">
-        <TabBtn active={tab === "model"} onClick={() => setTabAndPush("model")}>모델 통계</TabBtn>
+        <TabBtn active={tab === "model"} onClick={() => setTabAndPush("model")}>모델별 통계</TabBtn>
         <TabBtn active={tab === "causes"} onClick={() => setTabAndPush("causes")}>부적합 통계</TabBtn>
-        <TabBtn active={tab === "global"} onClick={() => setTabAndPush("global")}>전사 통계</TabBtn>
+        <TabBtn active={tab === "global"} onClick={() => setTabAndPush("global")}>전체 통계</TabBtn>
       </div>
       {tab === "causes" && <CausesTab />}
       {tab === "model" && <ModelTab />}
@@ -147,7 +147,7 @@ function CausesTab() {
         </div>
         <div className="space-y-1">
           <label className="text-sm font-medium block">모델명 (선택)</label>
-          <Combobox value={model} onChange={setModel} options={opts.models} placeholder="비워두면 전사" />
+          <Combobox value={model} onChange={setModel} options={opts.models} placeholder="비워두면 전체" />
         </div>
         <button onClick={search} disabled={!defect} className="px-5 py-2 text-sm rounded-lg bg-navy text-white disabled:opacity-50">조회</button>
       </div>
@@ -166,7 +166,7 @@ function CausesTab() {
                 )}
               </>
             ) : (
-              <span className="text-xs text-slate-500">전사 횡단 (모든 모델)</span>
+              <span className="text-xs text-slate-500">모든 모델</span>
             )}
           </div>
 

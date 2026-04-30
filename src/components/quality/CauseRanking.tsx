@@ -35,7 +35,7 @@ export default function CauseRanking({ title, rows, hrefBuilder, initialLimit }:
                 : undefined
             }
           >
-            <ol className="divide-y divide-slate-100">
+            <ol className="divide-y divide-slate-100 min-w-max">
               {visible.map((r, i) => {
                 const w = max > 0 ? Math.round((r.percent / max) * 100) : 0;
                 const content = (

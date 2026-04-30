@@ -30,8 +30,8 @@ export default function CauseRanking({ title, rows, hrefBuilder, initialLimit }:
             className={`overflow-x-auto ${expanded ? "overflow-y-auto" : ""}`}
             style={
               expanded
-                // 펼친 영역 높이는 collapsed 상태(initialLimit 행)의 약 1.5배. 그 이상은 내부 세로 스크롤.
-                ? { maxHeight: `${Math.max(420, (initialLimit ?? 10) * 56 * 1.5)}px` }
+                // 펼친 영역 높이는 collapsed 상태(initialLimit 행)의 약 1.05배. 그 이상은 내부 세로 스크롤.
+                ? { maxHeight: `${Math.max(420, (initialLimit ?? 10) * 56 * 1.05)}px` }
                 : undefined
             }
           >

@@ -143,11 +143,11 @@ function CausesTab() {
       <div className="bg-white border border-slate-200 rounded-xl p-4 grid grid-cols-1 md:grid-cols-[2fr_2fr_auto] gap-3 items-end">
         <div className="space-y-1">
           <label className="text-sm font-medium block">부적합 내용 *</label>
-          <Combobox value={defect} onChange={setDefect} options={opts.defects} placeholder="예: 입력쇼트" />
+          <Combobox value={defect} onChange={setDefect} onEnter={search} options={opts.defects} placeholder="예: 입력쇼트" />
         </div>
         <div className="space-y-1">
           <label className="text-sm font-medium block">모델명 (선택)</label>
-          <Combobox value={model} onChange={setModel} options={opts.models} placeholder="비워두면 전체" />
+          <Combobox value={model} onChange={setModel} onEnter={search} options={opts.models} placeholder="비워두면 전체" />
         </div>
         <button onClick={search} disabled={!defect} className="px-5 py-2 text-sm rounded-lg bg-navy text-white disabled:opacity-50">조회</button>
       </div>
@@ -242,21 +242,28 @@ function ModelTab() {
   const [d, setD] = useState<ModelData | null>(null);
 
   useEffect(() => { fetch("/api/quality/options").then((r) => r.json()).then((o) => setOpts(o.models)); }, []);
-  useEffect(() => {
+
+  function search() {
     if (!model) { setD(null); return; }
     fetch(`/api/quality/stats/model?model=${encodeURIComponent(model)}`).then((r) => r.json()).then(setD);
     const q = new URLSearchParams(sp.toString()); q.set("tab", "model"); q.set("model", model);
     router.replace(`/quality/stats?${q.toString()}`);
+  }
+
+  // URL 진입 시 자동 조회
+  useEffect(() => {
+    if (sp.get("model")) search();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [model]);
+  }, []);
 
   const catalog = useCatalogLookup(model ? [model] : []);
   const meta = catalog[model];
   return (
     <div className="space-y-6">
-      <div className="bg-white border border-slate-200 rounded-xl p-4 max-w-2xl flex items-center gap-3">
-        <Combobox value={model} onChange={setModel} options={opts} placeholder="모델명 선택" className="flex-1" />
-        {meta && (
+      <div className="bg-white border border-slate-200 rounded-xl p-4 grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-3 items-center">
+        <Combobox value={model} onChange={setModel} onEnter={search} options={opts} placeholder="모델명 선택" />
+        <button onClick={search} disabled={!model} className="px-5 py-2 text-sm rounded-lg bg-navy text-white disabled:opacity-50">조회</button>
+        {meta ? (
           <Link
             href={`/products/detail/${meta.series_model}`}
             className="text-sm text-accent-blue hover:underline whitespace-nowrap"
@@ -264,7 +271,7 @@ function ModelTab() {
           >
             제품 상세 →
           </Link>
-        )}
+        ) : <span />}
       </div>
       {d && (
         <>

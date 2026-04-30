@@ -8,9 +8,11 @@ interface Props {
   placeholder?: string;
   className?: string;
   disabled?: boolean;
+  /** Enter 키를 누르면 호출. 호출 직전 드롭다운은 자동 닫힘. */
+  onEnter?: () => void;
 }
 
-export default function Combobox({ value, onChange, options, placeholder, className = "", disabled }: Props) {
+export default function Combobox({ value, onChange, options, placeholder, className = "", disabled, onEnter }: Props) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -33,6 +35,13 @@ export default function Combobox({ value, onChange, options, placeholder, classN
         value={value}
         onChange={(e) => { onChange(e.target.value); setOpen(true); }}
         onFocus={() => setOpen(true)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            setOpen(false);
+            onEnter?.();
+          }
+        }}
         placeholder={placeholder}
         disabled={disabled}
         className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm disabled:bg-slate-100"

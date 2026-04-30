@@ -208,6 +208,7 @@ export interface GlobalDashboard {
   modelCount: number;
   handlerCount: number;
   topModels: Ranked[];
+  topDefects: Ranked[];
   topCauses: Ranked[];
   monthly: { month: string; count: number }[];
   sourceRatio: { source: "excel" | "web"; count: number }[];
@@ -225,6 +226,11 @@ export function getGlobalDashboard(db: Database.Database = getDb()): GlobalDashb
 
   const topModelsRows = db.prepare(
     `SELECT model_name v, COUNT(*) c FROM non_conformance GROUP BY model_name ORDER BY c DESC LIMIT 10`,
+  ).all() as { v: string; c: number }[];
+
+  const topDefectsRows = db.prepare(
+    `SELECT defect v, COUNT(*) c FROM non_conformance
+     WHERE defect IS NOT NULL AND defect != '' GROUP BY defect ORDER BY c DESC LIMIT 10`,
   ).all() as { v: string; c: number }[];
 
   const topCausesRows = db.prepare(
@@ -248,6 +254,7 @@ export function getGlobalDashboard(db: Database.Database = getDb()): GlobalDashb
     modelCount,
     handlerCount,
     topModels: rank(topModelsRows, total),
+    topDefects: rank(topDefectsRows, total),
     topCauses: rank(topCausesRows, total),
     monthly,
     sourceRatio,

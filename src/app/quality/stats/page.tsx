@@ -13,10 +13,10 @@ type Tab = "causes" | "model" | "global";
 function StatsPageInner() {
   const sp = useSearchParams();
   const router = useRouter();
-  const [tab, setTab] = useState<Tab>((sp.get("tab") as Tab) || "causes");
+  // URL에서 직접 derive — Link 클릭으로 URL이 바뀌어도 즉시 반영
+  const tab: Tab = (sp.get("tab") as Tab) || "causes";
 
   function setTabAndPush(t: Tab) {
-    setTab(t);
     const q = new URLSearchParams(sp.toString()); q.set("tab", t);
     router.replace(`/quality/stats?${q.toString()}`);
   }
@@ -310,6 +310,7 @@ function ModelTab() {
 interface GlobalData {
   total: number; recent30: number; modelCount: number; handlerCount: number;
   topModels: { key: string; count: number; percent: number }[];
+  topDefects: { key: string; count: number; percent: number }[];
   topCauses: { key: string; count: number; percent: number }[];
   monthly: { month: string; count: number }[];
   sourceRatio: { source: "excel" | "web"; count: number }[];
@@ -329,13 +330,18 @@ function GlobalTab() {
         <Card label="모델 수" value={d.modelCount.toLocaleString()} />
         <Card label="처리자 수" value={d.handlerCount.toLocaleString()} />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <CauseRanking
           title="부적합 많은 모델 TOP 10"
           rows={d.topModels}
           hrefBuilder={(m) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`}
         />
-        <CauseRanking title="부적합 원인 TOP 10 (전사)" rows={d.topCauses} />
+        <CauseRanking
+          title="부적합 내용 TOP 10"
+          rows={d.topDefects}
+          hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}`}
+        />
+        <CauseRanking title="부적합 원인 TOP 10" rows={d.topCauses} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="bg-white border border-slate-200 rounded-xl p-4 lg:col-span-2">

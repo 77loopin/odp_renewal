@@ -17,10 +17,11 @@ function StatsPageInner() {
   const tab: Tab = (sp.get("tab") as Tab) || "model";
 
   function setTabAndPush(t: Tab) {
-    // 탭 버튼 클릭은 깨끗한 슬레이트 (다른 탭의 model/defect 누수 방지).
-    // 탭 간 deep-link 이동(예: 모델 대시보드의 부적합 항목 클릭)은 별도 Link 가
-    //   필요한 파라미터를 명시적으로 채워서 이동하므로 영향 없음.
-    router.replace(`/quality/stats?tab=${t}`);
+    // 각 탭은 자기만의 prefix(m_*, c_*)를 쓰므로 그대로 보존하면
+    // 탭을 옮겼다가 돌아와도 이전 검색 상태가 유지된다.
+    const q = new URLSearchParams(sp.toString());
+    q.set("tab", t);
+    router.replace(`/quality/stats?${q.toString()}`);
   }
 
   return (
@@ -102,8 +103,8 @@ interface DefectData {
 function CausesTab() {
   const sp = useSearchParams();
   const router = useRouter();
-  const [defect, setDefect] = useState(sp.get("defect") ?? "");
-  const [model, setModel] = useState(sp.get("model") ?? "");
+  const [defect, setDefect] = useState(sp.get("c_defect") ?? "");
+  const [model, setModel] = useState(sp.get("c_model") ?? "");
   const [opts, setOpts] = useState({ models: [] as string[], defects: [] as string[] });
   const [d, setD] = useState<DefectData | null>(null);
 
@@ -118,14 +119,18 @@ function CausesTab() {
     q.set("defect", defect);
     if (model) q.set("model", model);
     fetch(`/api/quality/stats/defect?${q.toString()}`).then((r) => r.json()).then(setD);
-    const url = new URLSearchParams({ tab: "causes", defect });
-    if (model) url.set("model", model);
+    // URL은 prefix 형태로 보존
+    const url = new URLSearchParams(sp.toString());
+    url.set("tab", "causes");
+    url.set("c_defect", defect);
+    if (model) url.set("c_model", model);
+    else url.delete("c_model");
     router.replace(`/quality/stats?${url.toString()}`);
   }
 
   // URL 진입 시 자동 조회
   useEffect(() => {
-    if (sp.get("defect")) search();
+    if (sp.get("c_defect")) search();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -138,7 +143,7 @@ function CausesTab() {
     q.set("cause", cause);
     return `/quality?${q.toString()}`;
   };
-  const modelHref = (m: string) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`;
+  const modelHref = (m: string) => `/quality/stats?tab=model&m_model=${encodeURIComponent(m)}`;
 
   return (
     <div className="space-y-6">
@@ -239,8 +244,8 @@ interface ModelData {
 function ModelTab() {
   const sp = useSearchParams();
   const router = useRouter();
-  const [model, setModel] = useState(sp.get("model") ?? "");
-  const [appliedModel, setAppliedModel] = useState<string>(sp.get("model") ?? "");
+  const [model, setModel] = useState(sp.get("m_model") ?? "");
+  const [appliedModel, setAppliedModel] = useState<string>(sp.get("m_model") ?? "");
   const [opts, setOpts] = useState<string[]>([]);
   const [d, setD] = useState<ModelData | null>(null);
 
@@ -250,13 +255,15 @@ function ModelTab() {
     if (!model) { setD(null); setAppliedModel(""); return; }
     fetch(`/api/quality/stats/model?model=${encodeURIComponent(model)}`).then((r) => r.json()).then(setD);
     setAppliedModel(model);
-    const q = new URLSearchParams(sp.toString()); q.set("tab", "model"); q.set("model", model);
+    const q = new URLSearchParams(sp.toString());
+    q.set("tab", "model");
+    q.set("m_model", model);
     router.replace(`/quality/stats?${q.toString()}`);
   }
 
   // URL 진입 시 자동 조회
   useEffect(() => {
-    if (sp.get("model")) search();
+    if (sp.get("m_model")) search();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -304,7 +311,7 @@ function ModelTab() {
               title="부적합 내용 TOP 5"
               rows={d.topDefects}
               initialLimit={5}
-              hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}&model=${encodeURIComponent(appliedModel)}`}
+              hrefBuilder={(defect) => `/quality/stats?tab=causes&c_defect=${encodeURIComponent(defect)}&c_model=${encodeURIComponent(appliedModel)}`}
             />
             <CauseRanking
               title="부적합 원인 TOP 5"
@@ -365,14 +372,14 @@ function GlobalTab() {
         title="부적합 많은 모델 TOP 10"
         rows={d.topModels}
         initialLimit={10}
-        hrefBuilder={(m) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`}
+        hrefBuilder={(m) => `/quality/stats?tab=model&m_model=${encodeURIComponent(m)}`}
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <CauseRanking
           title="부적합 내용 TOP 10"
           rows={d.topDefects}
           initialLimit={10}
-          hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}`}
+          hrefBuilder={(defect) => `/quality/stats?tab=causes&c_defect=${encodeURIComponent(defect)}`}
         />
         <CauseRanking title="부적합 원인 TOP 10" rows={d.topCauses} initialLimit={10} />
       </div>

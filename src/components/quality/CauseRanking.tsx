@@ -26,7 +26,9 @@ export default function CauseRanking({ title, rows, hrefBuilder, initialLimit }:
         <div className="px-4 py-12 text-center text-slate-500 text-sm">데이터 없음</div>
       ) : (
         <>
-          <ol className="divide-y divide-slate-100">
+          <ol
+            className={`divide-y divide-slate-100 ${expanded ? "max-h-[420px] overflow-y-auto" : ""}`}
+          >
             {visible.map((r, i) => {
               const w = max > 0 ? Math.round((r.percent / max) * 100) : 0;
               const content = (

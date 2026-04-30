@@ -238,14 +238,16 @@ function ModelTab() {
   const sp = useSearchParams();
   const router = useRouter();
   const [model, setModel] = useState(sp.get("model") ?? "");
+  const [appliedModel, setAppliedModel] = useState<string>(sp.get("model") ?? "");
   const [opts, setOpts] = useState<string[]>([]);
   const [d, setD] = useState<ModelData | null>(null);
 
   useEffect(() => { fetch("/api/quality/options").then((r) => r.json()).then((o) => setOpts(o.models)); }, []);
 
   function search() {
-    if (!model) { setD(null); return; }
+    if (!model) { setD(null); setAppliedModel(""); return; }
     fetch(`/api/quality/stats/model?model=${encodeURIComponent(model)}`).then((r) => r.json()).then(setD);
+    setAppliedModel(model);
     const q = new URLSearchParams(sp.toString()); q.set("tab", "model"); q.set("model", model);
     router.replace(`/quality/stats?${q.toString()}`);
   }
@@ -256,25 +258,35 @@ function ModelTab() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const catalog = useCatalogLookup(model ? [model] : []);
-  const meta = catalog[model];
+  // 카탈로그 lookup은 적용된 모델 기준으로만 (검색어 입력 중 실시간 호출 방지)
+  const catalog = useCatalogLookup(appliedModel ? [appliedModel] : []);
+  const meta = catalog[appliedModel];
   return (
     <div className="space-y-6">
-      <div className="bg-white border border-slate-200 rounded-xl p-4 grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-3 items-center">
+      {/* 검색 바: 위치 고정 */}
+      <div className="bg-white border border-slate-200 rounded-xl p-4 grid grid-cols-[1fr_auto] gap-3 items-center max-w-2xl">
         <Combobox value={model} onChange={setModel} onEnter={search} options={opts} placeholder="모델명 선택" />
         <button onClick={search} disabled={!model} className="px-5 py-2 text-sm rounded-lg bg-navy text-white disabled:opacity-50">조회</button>
-        {meta ? (
-          <Link
-            href={`/products/detail/${meta.series_model}`}
-            className="text-sm text-accent-blue hover:underline whitespace-nowrap"
-            title={meta.series_name}
-          >
-            제품 상세 →
-          </Link>
-        ) : <span />}
       </div>
       {d && (
         <>
+          {appliedModel && (
+            <div className="flex flex-wrap items-center gap-2 text-sm">
+              <span className="px-2 py-1 rounded-md bg-slate-100 font-mono font-medium">{appliedModel}</span>
+              {meta && (
+                <>
+                  <span className={`px-1.5 py-0.5 text-[10px] font-medium rounded ${
+                    meta.category_id === "DCDC" ? "bg-blue-50 text-accent-blue" :
+                    meta.category_id === "POL"  ? "bg-teal-50 text-accent-teal" :
+                    meta.category_id === "ACDC" ? "bg-amber-50 text-accent-amber" :
+                    "bg-slate-100 text-slate-600"}`}>{meta.category_id}</span>
+                  <span className="text-slate-500">{meta.series_name}</span>
+                  <Link href={`/products/detail/${meta.series_model}`}
+                        className="text-accent-blue hover:underline">제품 상세 →</Link>
+                </>
+              )}
+            </div>
+          )}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
             <Card label="총 부적합" value={d.total.toLocaleString()} />
             <Card label="최근 30일" value={d.recent30.toLocaleString()} />
@@ -290,13 +302,13 @@ function ModelTab() {
               title="부적합 내용 TOP 5"
               rows={d.topDefects}
               initialLimit={5}
-              hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}&model=${encodeURIComponent(model)}`}
+              hrefBuilder={(defect) => `/quality/stats?tab=causes&defect=${encodeURIComponent(defect)}&model=${encodeURIComponent(appliedModel)}`}
             />
             <CauseRanking
               title="부적합 원인 TOP 5"
               rows={d.topCauses}
               initialLimit={5}
-              hrefBuilder={(cause) => `/quality?model=${encodeURIComponent(model)}&cause=${encodeURIComponent(cause)}`}
+              hrefBuilder={(cause) => `/quality?model=${encodeURIComponent(appliedModel)}&cause=${encodeURIComponent(cause)}`}
             />
           </div>
           <div className="bg-white border border-slate-200 rounded-xl">

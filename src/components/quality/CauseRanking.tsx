@@ -38,12 +38,15 @@ export default function CauseRanking({ title, rows, hrefBuilder, initialLimit }:
             {visible.map((r, i) => {
               const w = max > 0 ? Math.round((r.percent / max) * 100) : 0;
               const content = (
-                <div className="flex items-center gap-3 px-4 py-3">
-                  <span className="w-6 text-right text-slate-400 text-sm">{i + 1}</span>
-                  <span className="flex-1 font-medium truncate">{r.key}</span>
-                  <span className="w-16 text-right text-sm tabular-nums">{r.count}건</span>
-                  <span className="w-16 text-right text-sm tabular-nums text-slate-500">{r.percent}%</span>
-                  <div className="w-24 h-2 bg-slate-100 rounded-full overflow-hidden">
+                // 반응형:
+                //   - 모바일(default): 순위 + 항목 + 건수 + %
+                //   - md 이상       : + 게이지 바
+                <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-3">
+                  <span className="w-6 shrink-0 text-right text-slate-400 text-sm">{i + 1}</span>
+                  <span className="flex-1 min-w-0 font-medium truncate">{r.key}</span>
+                  <span className="w-14 shrink-0 text-right text-sm tabular-nums">{r.count}건</span>
+                  <span className="w-12 shrink-0 text-right text-sm tabular-nums text-slate-500">{r.percent}%</span>
+                  <div className="hidden md:block w-20 shrink-0 h-2 bg-slate-100 rounded-full overflow-hidden">
                     <div className="h-full bg-accent-blue" style={{ width: `${w}%` }} />
                   </div>
                 </div>

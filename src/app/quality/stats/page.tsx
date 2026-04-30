@@ -6,6 +6,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, 
 import Container from "@/components/ui/Container";
 import Combobox from "@/components/quality/Combobox";
 import CauseRanking from "@/components/quality/CauseRanking";
+import { useCatalogLookup } from "@/components/quality/useCatalogLookup";
 
 type Tab = "causes" | "model" | "global";
 
@@ -179,10 +180,21 @@ function ModelTab() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [model]);
 
+  const catalog = useCatalogLookup(model ? [model] : []);
+  const meta = catalog[model];
   return (
     <div className="space-y-6">
-      <div className="bg-white border border-slate-200 rounded-xl p-4 max-w-md">
-        <Combobox value={model} onChange={setModel} options={opts} placeholder="모델명 선택" />
+      <div className="bg-white border border-slate-200 rounded-xl p-4 max-w-2xl flex items-center gap-3">
+        <Combobox value={model} onChange={setModel} options={opts} placeholder="모델명 선택" className="flex-1" />
+        {meta && (
+          <Link
+            href={`/products/detail/${meta.series_model}`}
+            className="text-sm text-accent-blue hover:underline whitespace-nowrap"
+            title={meta.series_name}
+          >
+            제품 상세 →
+          </Link>
+        )}
       </div>
       {d && (
         <>
@@ -248,7 +260,11 @@ function GlobalTab() {
         <Card label="처리자 수" value={d.handlerCount.toLocaleString()} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <CauseRanking title="부적합 많은 모델 TOP 10" rows={d.topModels} />
+        <CauseRanking
+          title="부적합 많은 모델 TOP 10"
+          rows={d.topModels}
+          hrefBuilder={(m) => `/quality/stats?tab=model&model=${encodeURIComponent(m)}`}
+        />
         <CauseRanking title="부적합 원인 TOP 10 (전사)" rows={d.topCauses} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

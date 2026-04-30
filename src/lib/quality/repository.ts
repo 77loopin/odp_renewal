@@ -199,10 +199,17 @@ export function getOptions(
       : `SELECT DISTINCT ${col} as v FROM non_conformance WHERE ${col} IS NOT NULL AND ${col} != '' ORDER BY v`;
     return (db.prepare(sql).all(...params) as { v: string }[]).map((r) => r.v);
   };
+  let models: string[];
+  if (scope.model) {
+    models = [scope.model];
+  } else {
+    // 부적합 이력 모델명 ∪ 카탈로그 part_number  (정렬·중복제거)
+    const historic = (db.prepare(`SELECT DISTINCT model_name as v FROM non_conformance`).all() as { v: string }[]).map((r) => r.v);
+    const catalog  = (db.prepare(`SELECT part_number as v FROM catalog_product`).all() as { v: string }[]).map((r) => r.v);
+    models = Array.from(new Set([...historic, ...catalog])).sort();
+  }
   return {
-    models: scope.model
-      ? [scope.model]
-      : (db.prepare(`SELECT DISTINCT model_name as v FROM non_conformance ORDER BY v`).all() as { v: string }[]).map((r) => r.v),
+    models,
     defects: all("defect"),
     causes: all("cause"),
     actions: all("action"),

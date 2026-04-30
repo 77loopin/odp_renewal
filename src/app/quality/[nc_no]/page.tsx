@@ -5,6 +5,8 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import NCForm, { NCFormValue } from "@/components/quality/NCForm";
 import SourceBadge from "@/components/quality/SourceBadge";
+import ModelLink from "@/components/quality/ModelLink";
+import { useCatalogLookup } from "@/components/quality/useCatalogLookup";
 import PasswordModal, { getStoredPassword, setStoredPassword, clearStoredPassword } from "@/components/quality/PasswordModal";
 import type { NonConformance } from "@/lib/quality/types";
 
@@ -67,7 +69,9 @@ export default function QualityDetailPage() {
     void tryWithStored({ kind: "delete" });
   }
 
+  const catalog = useCatalogLookup(data ? [data.model_name] : []);
   if (!data) return <Container className="py-8">로딩 중…</Container>;
+  const meta = catalog[data.model_name];
 
   return (
     <Container className="py-8">
@@ -89,7 +93,15 @@ export default function QualityDetailPage() {
       ) : (
         <div className="bg-white border border-slate-200 rounded-xl p-6 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3 text-sm max-w-3xl">
           <Field k="작성일자" v={data.written_date} />
-          <Field k="모델명" v={data.model_name} />
+          <div className="flex">
+            <span className="w-24 text-slate-500 shrink-0">모델명</span>
+            <span className="flex-1 break-all">
+              <ModelLink model={data.model_name} meta={meta} showBadge />
+              {meta && (
+                <span className="ml-2 text-xs text-slate-500">{meta.series_name}</span>
+              )}
+            </span>
+          </div>
           <Field k="LOT 번호" v={data.lot_no} />
           <Field k="처리자" v={data.handler} />
           <Field k="부적합 내용" v={data.defect} />

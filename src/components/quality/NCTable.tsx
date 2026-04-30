@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import SourceBadge from "./SourceBadge";
+import ModelLink from "./ModelLink";
+import { useCatalogLookup } from "./useCatalogLookup";
 import type { NonConformance } from "@/lib/quality/types";
 
 interface Props {
@@ -13,6 +15,7 @@ interface Props {
 
 export default function NCTable({ rows, total, page, pageSize, onPageChange }: Props) {
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const catalog = useCatalogLookup(rows.map((r) => r.model_name));
   return (
     <div className="bg-white border border-slate-200 rounded-xl overflow-hidden">
       <div className="overflow-x-auto">
@@ -41,7 +44,7 @@ export default function NCTable({ rows, total, page, pageSize, onPageChange }: P
                   <Link className="text-accent-blue hover:underline" href={`/quality/${r.nc_no}`}>{r.nc_no}</Link>
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap">{r.written_date}</td>
-                <td className="px-3 py-2">{r.model_name}</td>
+                <td className="px-3 py-2"><ModelLink model={r.model_name} meta={catalog[r.model_name]} /></td>
                 <td className="px-3 py-2">{r.lot_no ?? "-"}</td>
                 <td className="px-3 py-2">{r.defect}</td>
                 <td className="px-3 py-2">{r.cause ?? "-"}</td>

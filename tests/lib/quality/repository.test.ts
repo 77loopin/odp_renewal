@@ -28,6 +28,16 @@ function makeDb() {
       created_at TEXT NOT NULL DEFAULT (datetime('now')),
       updated_at TEXT NOT NULL DEFAULT (datetime('now'))
     );
+    CREATE TABLE catalog_product (
+      part_number    TEXT PRIMARY KEY,
+      series_model   TEXT NOT NULL,
+      series_cate    TEXT NOT NULL,
+      series_name    TEXT NOT NULL,
+      category_id    TEXT NOT NULL,
+      input_voltage  TEXT,
+      output_voltage TEXT,
+      power_watts    REAL
+    );
   `);
   return db;
 }

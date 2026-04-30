@@ -14,7 +14,7 @@ function StatsPageInner() {
   const sp = useSearchParams();
   const router = useRouter();
   // URL에서 직접 derive — Link 클릭으로 URL이 바뀌어도 즉시 반영
-  const tab: Tab = (sp.get("tab") as Tab) || "causes";
+  const tab: Tab = (sp.get("tab") as Tab) || "model";
 
   function setTabAndPush(t: Tab) {
     const q = new URLSearchParams(sp.toString()); q.set("tab", t);
